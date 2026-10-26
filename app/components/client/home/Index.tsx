@@ -22,7 +22,7 @@ const Index = () => {
           <Survey data={surveyData} />
           <News data={newsData} />
         </div>
-        <div aria-hidden="true" className="h-[calc(120svh-19px)]" />
+        <div aria-hidden="true" className="h-[calc(130svh-19px)]" />
       </div>
     </>
   );

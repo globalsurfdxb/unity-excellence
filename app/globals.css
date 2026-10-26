@@ -302,7 +302,7 @@ body {
 }
 
 @theme {
-  --animate-gradient-wave: gradient-wave 28s linear infinite;
+  --animate-gradient-wave: gradient-wave 3s linear infinite;
 
   @keyframes gradient-wave {
     0% { --gradient-angle: 133.88deg; }
