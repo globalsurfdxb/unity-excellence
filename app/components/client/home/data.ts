@@ -57,3 +57,38 @@ export const highlightsData = {
     },
   ],
 };
+
+export const servicesData = {
+  title: "Our services",
+  description:
+    "We ensure common areas remain clean, safe, and well-maintained while upholding transparent",
+  background: "/assets/images/home/services/service-bg.jpg",
+  bgShape: "/assets/images/home/services/service-bg-svg.svg",
+  services: [
+    {
+      title: "Governance & Administration",
+      description: "Keeping common areas welcoming and systems reliable.",
+      image: "/assets/images/home/services/list/1.jpg",
+    },
+    {
+      title: "Financial Management & Reporting",
+      description: "Keeping common areas welcoming and systems reliable.",
+      image: "/assets/images/home/services/list/1.jpg",
+    },
+    {
+      title: "Facilities & Maintenance",
+      description: "Keeping common areas welcoming and systems reliable.",
+      image: "/assets/images/home/services/list/1.jpg",
+    },
+    {
+      title: "Security & Safety Management",
+      description: "Keeping common areas welcoming and systems reliable.",
+      image: "/assets/images/home/services/list/1.jpg",
+    },
+    {
+      title: "Technology & Smart Management Solutions",
+      description: "Keeping common areas welcoming and systems reliable.",
+      image: "/assets/images/home/services/list/1.jpg",
+    },
+  ],
+};
