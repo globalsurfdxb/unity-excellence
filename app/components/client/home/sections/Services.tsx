@@ -24,7 +24,7 @@ const Services = ({ data }: Props) => {
                 src={service.image}
                 alt={service.title}
                 fill
-                className={`object-cover transition-opacity rounded-[10px] duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
+                className={`object-cover pointer-events-none transition-opacity rounded-[10px] duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
               />
             ))}
           </div>
@@ -62,7 +62,7 @@ const Services = ({ data }: Props) => {
                           alt=""
                           width={20}
                           height={20}
-                          className="h-[12px] w-auto"
+                          className="h-[12px] w-auto pointer-events-none"
                         />
                       </span>
                     </button>
