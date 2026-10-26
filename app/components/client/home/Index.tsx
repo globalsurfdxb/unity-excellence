@@ -2,7 +2,8 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Highlights from "./sections/Highlights";
 import Services from "./sections/Services";
-import { heroData, aboutData, highlightsData, servicesData } from "./data";
+import Excellence from "./sections/Excellence";
+import { heroData, aboutData, highlightsData, servicesData, excellenceData } from "./data";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <About data={aboutData} />
       <Highlights data={highlightsData} />
       <Services data={servicesData} />
+      <Excellence data={excellenceData} />
     </>
   );
 };

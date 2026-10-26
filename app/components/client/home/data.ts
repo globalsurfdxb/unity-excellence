@@ -92,3 +92,15 @@ export const servicesData = {
     },
   ],
 };
+
+export const excellenceData = {
+  title: "Why\nUnity Excellence",
+  description:
+    "Our approach blends transparency, responsiveness, and professional expertise across all aspects of association management from facilities and finances to compliance and communication.",
+  features: [
+    { icon: "/assets/images/home/excellence/icons/1.svg", title: "Certified Professionals" },
+    { icon: "/assets/images/home/excellence/icons/2.svg", title: "24/7 Support" },
+    { icon: "/assets/images/home/excellence/icons/3.svg", title: "Full Transparency" },
+    { icon: "/assets/images/home/excellence/icons/4.svg", title: "Community Support" },
+  ],
+};
