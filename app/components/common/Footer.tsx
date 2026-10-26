@@ -14,7 +14,7 @@ const Footer = ({ data }: Props) => {
   const pathname = usePathname();
 
   return (
-    <footer className="sticky bottom-0 z-0 overflow-hidden rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
+    <footer className="relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
       <Image src={data.background} alt="" fill className="object-cover pointer-events-none" />
       <div className="container pointer-events-none absolute inset-x-0 top-0">
         <Image src={data.bgShape} alt="" width={542} height={333} className="pointer-events-none ml-auto block h-auto max-w-[36%] 3xl:max-w-[60%] opacity-60" />
