@@ -8,12 +8,11 @@ type Props = {
 
 const Hero = ({ data }: Props) => {
   return (
-    <section className="relative h-[calc(100vh-19px)] overflow-hidden rounded-b-[40px]">
+    <section className="relative z-10 h-[calc(100svh-19px)] overflow-hidden rounded-b-[40px]">
       <Image
         src={data.image}
         alt={data.imageAlt}
         fill
-        priority
         className="object-cover"
       />
       <div className="absolute inset-0 bg-black/30 bg-linear-to-b from-black/80 to-transparent to-[61.87%]" />

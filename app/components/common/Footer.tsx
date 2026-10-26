@@ -14,34 +14,37 @@ const Footer = ({ data }: Props) => {
   const pathname = usePathname();
 
   return (
-    <footer className="relative overflow-hidden rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
+    <footer className="relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
       <Image src={data.background} alt="" fill className="object-cover pointer-events-none" />
+      <div className="container pointer-events-none absolute inset-x-0 top-0">
+        <Image src={data.bgShape} alt="" width={542} height={333} className="pointer-events-none ml-auto block h-auto max-w-[36%] 3xl:max-w-[60%] opacity-60" />
+      </div>
 
       <div className="container relative">
-        <div className="grid gap-x-40 gap-y-40 lg:grid-cols-[1.2fr_1fr_auto] lg:items-center">
+        <div className="grid gap-x-40 gap-y-40 lg:grid-cols-[1fr_1fr_auto] 3xl:grid-cols-[1.2fr_1fr_auto] lg:items-center">
           {/* row 1 */}
           <div className="lg:self-start">
-            <h2 className="section-title text-white">{data.title}</h2>
+            <h2 className="section-title text-white max-3xl:max-w-[20ch]">{data.title}</h2>
             <p className="text-description mt-20 max-w-[40ch] text-white/70">{data.description}</p>
             <CommonButton label={data.button.label} href={data.button.href} className="mt-40" />
           </div>
           <div className="lg:col-span-2 lg:self-start mt-3">
-            <a href={`tel:${data.contact.phone.replace(/\s/g, "")}`} className="text-subtitle block text-white">
+            <a href={`tel:${data.contact.phone.replace(/\s/g, "")}`} className="text-subtitle block text-white w-fit">
               {data.contact.phone}
             </a>
-            <a href={`mailto:${data.contact.email}`} className="text-subtitle mt-[10px] block underline text-white">
+            <a href={`mailto:${data.contact.email}`} className="text-subtitle mt-[10px] block underline text-white w-fit">
               {data.contact.email}
             </a>
-            <p className="text-description mt-20 whitespace-pre-line text-white/70">{data.contact.address}</p>
+            <p className="text-description mt-20 whitespace-pre-line text-white/70 w-fit">{data.contact.address}</p>
           </div>
 
           {/* row 2 */}
           <span className="block h-2.5 3xl:h-3.75 rounded-t-[10px] border-t border-white/20 lg:col-span-3" />
 
           {/* row 3 */}
-          <Image src={data.logo} alt="Unity Excellence" width={117} height={104} className="h-auto w-[90px] lg:w-[117px]" />
+          <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[110px] 3xl:w-[116px]" />
 
-          <nav className="flex flex-wrap gap-x-50 gap-y-20">
+          <nav className="flex flex-wrap gap-x-40 3xl:gap-x-50 gap-y-20">
             {data.navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -68,7 +71,7 @@ const Footer = ({ data }: Props) => {
                   alt=""
                   width={24}
                   height={24}
-                  className="brightness-0 invert transition-[filter] duration-500 group-hover:brightness-100 group-hover:invert-0"
+                  className="pointer-events-none brightness-0 invert transition-[filter] duration-500 group-hover:brightness-100 group-hover:invert-0"
                 />
               </a>
             ))}

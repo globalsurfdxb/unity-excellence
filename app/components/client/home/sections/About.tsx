@@ -24,7 +24,7 @@ const About = ({ data }: Props) => {
                 alt={image.alt}
                 width={150}
                 height={150}
-                className="size-[100px] rounded-2.5 object-cover xl:size-150"
+                className="size-[100px] rounded-[10px] object-cover xl:size-150"
               />
             ))}
           </div>
