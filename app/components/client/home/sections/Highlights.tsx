@@ -91,8 +91,8 @@ const Highlights = ({ data }: Props) => {
                     {pad(i + 1)}/
                     <span className="text-white/40">{pad(total)}</span>
                   </span>
-                  <h3 className="sub-title mt-5 max-w-[22ch] text-white">{slide.subtitle}</h3>
-                  <p className="text-description mt-5 max-w-[35ch] text-white/70">{slide.description}</p>
+                  <h3 className="text-subtitle mt-20 max-w-[22ch] text-white">{slide.subtitle}</h3>
+                  <p className="text-description mt-20 max-w-[35ch] text-white/70">{slide.description}</p>
                 </div>
               </div>
             </SwiperSlide>
