@@ -24,3 +24,36 @@ export const aboutData = {
     { src: "/assets/images/home/about/4.jpg", alt: "Property management team" },
   ],
 };
+
+export const highlightsData = {
+  slides: [
+    {
+      video: "/assets/videos/home/highlights/1.mp4",
+      title: "Protecting every owner's\ninvestment",
+      subtitle: "Well-maintained common areas and compliant governance",
+      description:
+        "We ensure common areas remain clean, safe, and well-maintained while upholding transparent governance and regulatory compliance.",
+    },
+    {
+      video: "/assets/videos/home/highlights/1.mp4",
+      title: "Keeping every resident\ninformed",
+      subtitle: "Timely updates, open channels and responsive support",
+      description:
+        "We keep owners and residents informed through regular updates, accessible records, and prompt responses to every enquiry.",
+    },
+    {
+      video: "/assets/videos/home/highlights/1.mp4",
+      title: "Managing service charges\nwith clarity",
+      subtitle: "Accurate budgets and transparent financial reporting",
+      description:
+        "We prepare realistic budgets, collect service charges efficiently, and provide clear financial reports that owners can trust.",
+    },
+    {
+      video: "/assets/videos/home/highlights/1.mp4",
+      title: "Reliable care for every\ncommunity",
+      subtitle: "Planned maintenance and carefully vetted service partners",
+      description:
+        "We schedule preventive maintenance, manage qualified contractors, and resolve issues quickly before they affect residents.",
+    },
+  ],
+};
