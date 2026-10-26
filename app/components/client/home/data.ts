@@ -104,3 +104,14 @@ export const excellenceData = {
     { icon: "/assets/images/home/excellence/icons/4.svg", title: "Community Support" },
   ],
 };
+
+export const surveyData = {
+  image: "/assets/images/home/survey/survey-left.jpg",
+  imageAlt: "Community manager meeting a resident",
+  title: "Help us understand\nyour community",
+  description: "Your daily feedback shapes the future of your neighborhood. Share your thoughts.",
+  button: {
+    label: "Take the Survey",
+    href: "#",
+  },
+};
