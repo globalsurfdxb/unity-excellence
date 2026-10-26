@@ -115,3 +115,41 @@ export const surveyData = {
     href: "#",
   },
 };
+
+export const newsData = {
+  title: "Latest news",
+  button: {
+    label: "View All News",
+    href: "#",
+  },
+  news: [
+    {
+      image: "/assets/images/home/news/1.jpg",
+      title: "Unity excellence strengthens community management services",
+      category: "Community",
+      date: "20/10/2026",
+      href: "#",
+    },
+    {
+      image: "/assets/images/home/news/2.jpg",
+      title: "Advancing safety through smarter security solutions",
+      category: "Safety & Security",
+      date: "15/09/2026",
+      href: "#",
+    },
+    {
+      image: "/assets/images/home/news/3.jpg",
+      title: "Proactive maintenance for better community living",
+      category: "Facilities",
+      date: "10/09/2026",
+      href: "#",
+    },
+    {
+      image: "/assets/images/home/news/4.jpg",
+      title: "Building trust through transparent community governance",
+      category: "Governance",
+      date: "10/09/2026",
+      href: "#",
+    },
+  ],
+};

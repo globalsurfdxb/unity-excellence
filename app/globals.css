@@ -97,6 +97,9 @@ input:-webkit-autofill:active {
 /* 18px → 16px at 420px, 18px at 1920px */
 --text-18: clamp(16px, 16px + (100vw - 420px) * 2 / 1500, 18px);
 
+/* 16px → 14px at 420px, 16px at 1920px */
+--text-16: clamp(14px, 14px + (100vw - 420px) * 2 / 1500, 16px);
+
 /* 14px → 13px at 420px, 14px at 1920px */
 --text-14: clamp(13px, 13px + (100vw - 420px) * 1 / 1500, 14px);
 
@@ -108,6 +111,9 @@ input:-webkit-autofill:active {
 
 /* 130px → 70px at 420px, 130px at 1920px */
 --space-130: clamp(70px, 70px + (100vw - 420px) * 60 / 1500, 130px);
+
+/* 120px → 65px at 420px, 120px at 1920px */
+--space-120: clamp(65px, 65px + (100vw - 420px) * 55 / 1500, 120px);
 
 /* 100px → 60px at 420px, 100px at 1920px */
 --space-100: clamp(60px, 60px + (100vw - 420px) * 40 / 1500, 100px);
@@ -151,10 +157,12 @@ input:-webkit-autofill:active {
   --text-50: var(--text-50);
   --text-26: var(--text-26);
   --text-18: var(--text-18);
+  --text-16: var(--text-16);
   --text-14: var(--text-14);
    
   --spacing-150: var(--space-150);
   --spacing-130: var(--space-130);
+  --spacing-120: var(--space-120);
   --spacing-100: var(--space-100);
   --spacing-80: var(--space-80);
   --spacing-70: var(--space-70);
@@ -272,6 +280,10 @@ body {
 
 @utility text-description-2 {
   @apply text-14 leading-[1.41666667];
+}
+
+@utility text-description-3 {
+  @apply text-16 leading-[1.1875];
 }
 
 /* for enabling vertical trim */
