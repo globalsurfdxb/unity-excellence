@@ -283,3 +283,56 @@ body {
 .top-spacing {
   @apply pt-[100px] md:pt-[140px] 2xl:pt-200 3xl:pt-[206px];
 }
+
+
+/* ---------- Gradient Animation - Home - About Section ---------- */
+/* registered so the gradient angle can animate */
+@property --gradient-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 133.88deg;
+}
+
+@theme {
+  --animate-gradient-wave: gradient-wave 28s linear infinite;
+
+  @keyframes gradient-wave {
+    0% { --gradient-angle: 133.88deg; }
+    2.78% { --gradient-angle: 156.04deg; }
+    5.56% { --gradient-angle: 164.85deg; }
+    8.33% { --gradient-angle: 169.57deg; }
+    11.11% { --gradient-angle: 172.62deg; }
+    13.89% { --gradient-angle: 174.86deg; }
+    16.67% { --gradient-angle: 176.67deg; }
+    19.44% { --gradient-angle: 178.23deg; }
+    22.22% { --gradient-angle: 179.69deg; }
+    25% { --gradient-angle: 181.12deg; }
+    27.78% { --gradient-angle: 182.63deg; }
+    30.56% { --gradient-angle: 184.31deg; }
+    33.33% { --gradient-angle: 186.33deg; }
+    36.11% { --gradient-angle: 188.96deg; }
+    38.89% { --gradient-angle: 192.79deg; }
+    41.67% { --gradient-angle: 199.31deg; }
+    44.44% { --gradient-angle: 213.50deg; }
+    47.22% { --gradient-angle: 255.09deg; }
+    50% { --gradient-angle: 313.88deg; }
+    52.78% { --gradient-angle: 336.04deg; }
+    55.56% { --gradient-angle: 344.85deg; }
+    58.33% { --gradient-angle: 349.57deg; }
+    61.11% { --gradient-angle: 352.62deg; }
+    63.89% { --gradient-angle: 354.86deg; }
+    66.67% { --gradient-angle: 356.67deg; }
+    69.44% { --gradient-angle: 358.23deg; }
+    72.22% { --gradient-angle: 359.69deg; }
+    75% { --gradient-angle: 361.12deg; }
+    77.78% { --gradient-angle: 362.63deg; }
+    80.56% { --gradient-angle: 364.31deg; }
+    83.33% { --gradient-angle: 366.33deg; }
+    86.11% { --gradient-angle: 368.96deg; }
+    88.89% { --gradient-angle: 372.79deg; }
+    91.67% { --gradient-angle: 379.31deg; }
+    94.44% { --gradient-angle: 393.50deg; }
+    97.22% { --gradient-angle: 435.09deg; }
+    100% { --gradient-angle: 493.88deg; }
+  }
+}
