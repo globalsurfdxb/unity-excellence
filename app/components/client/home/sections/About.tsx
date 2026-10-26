@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { motion, useMotionTemplate, useScroll, useTransform } from "motion/react";
+import { motion, useMotionTemplate, useMotionValueEvent, useScroll, useTransform } from "motion/react";
 import { aboutData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
 
@@ -47,8 +48,39 @@ const ParallaxImage = ({ src, alt, offset, fade = false }: ParallaxImageProps) =
 // starting offset (px) per image: top-left, top-right, bottom-left, bottom-right
 const OFFSETS = [90, 140, 120, 70];
 
+// text drops in from above, bottom-up: button, then description, then title
+const DROP = -40;
+const ELASTIC = { type: "spring", stiffness: 260, damping: 14 } as const;
+// slower and softer than the button's spring, so the larger title glides in
+const TITLE_ELASTIC = { type: "spring", stiffness: 120, damping: 10 } as const;
+const SMOOTH = { duration: 0.6, ease: [0.22, 1, 0.36, 1] } as const;
+const reveal = (shown: boolean, delay: number, transition: typeof ELASTIC | typeof TITLE_ELASTIC | typeof SMOOTH) => ({
+  initial: { y: DROP, opacity: 0 },
+  animate: shown ? { y: 0, opacity: 1 } : undefined,
+  transition: { ...transition, delay },
+});
+
+// matches the hero height in Hero.tsx: calc(100svh - 19px)
+const HERO_GAP = 19;
+
 const About = ({ data }: Props) => {
   const [topRow, bottomRow] = [data.images.slice(0, 2), data.images.slice(2, 4)];
+  const textRef = useRef<HTMLDivElement>(null);
+  const [shown, setShown] = useState(false);
+  const { scrollY } = useScroll();
+
+  // the text sits under the hero curtain, so "in view" fires too early;
+  // wait until the hero's bottom edge has passed the middle of the text
+  const check = (scroll: number) => {
+    if (shown || !textRef.current) return;
+    const { top, height } = textRef.current.getBoundingClientRect();
+    const middle = top + height / 2;
+    const heroBottom = window.innerHeight - HERO_GAP - scroll;
+    if (heroBottom < middle && middle < window.innerHeight) setShown(true);
+  };
+  useMotionValueEvent(scrollY, "change", check);
+  // covers a reload that restores the page mid-scroll
+  useEffect(() => check(scrollY.get()), []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section className="py-130">
@@ -66,18 +98,20 @@ const About = ({ data }: Props) => {
           </div>
         </div>
 
-        <div className="mt-60 flex flex-col items-center text-center lg:absolute lg:inset-0 lg:mt-0">
-          <h2 className="section-title max-w-[30ch] bg-linear-[var(--gradient-angle)] from-primary from-[21.05%] to-primary-light to-[84.98%] animate-gradient-wave bg-clip-text text-transparent">
+        <div ref={textRef} className="mt-60 flex flex-col items-center text-center lg:absolute lg:inset-0 lg:mt-0">
+          <motion.h2 {...reveal(shown, 0.4, TITLE_ELASTIC)} className="section-title max-w-[30ch] bg-linear-[var(--gradient-angle)] from-primary from-[21.05%] to-primary-light to-[84.98%] animate-gradient-wave bg-clip-text text-transparent">
             {data.title}
-          </h2>
-          <p className="text-description mt-20 mb-40 max-w-[48ch] text-secondary">
+          </motion.h2>
+          <motion.p {...reveal(shown, 0.2, SMOOTH)} className="text-description mt-20 mb-40 max-w-[48ch] text-secondary">
             {data.description}
-          </p>
-          <CommonButton
-            label={data.button.label}
-            href={data.button.href}
-            variant="dark"
-          />
+          </motion.p>
+          <motion.div {...reveal(shown, 0, ELASTIC)}>
+            <CommonButton
+              label={data.button.label}
+              href={data.button.href}
+              variant="dark"
+            />
+          </motion.div>
         </div>
       </div>
     </section>

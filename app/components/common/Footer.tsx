@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { footerData } from "./data";
 import CommonButton from "./CommonButton";
+import { usePressScale } from "./usePressScale";
 
 type Props = {
   data: typeof footerData;
@@ -12,6 +13,7 @@ type Props = {
 
 const Footer = ({ data }: Props) => {
   const pathname = usePathname();
+  const pressScale = usePressScale();
 
   return (
     <footer className="relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
@@ -63,15 +65,21 @@ const Footer = ({ data }: Props) => {
                 aria-label={social.label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex size-[48px] items-center justify-center rounded-full border border-border-color/20 transition-colors duration-500 hover:bg-white"
+                {...pressScale}
+                className="group relative isolate flex size-[48px] items-center justify-center overflow-hidden rounded-full border border-border-color/20"
               >
+                {/* drops in from the top on hover; twice the button's height so its curved bottom edge clears the button */}
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-0 top-0 -z-10 h-[200%] -translate-y-[101%] rounded-b-[30%] bg-white transition-transform duration-400 ease-linear group-hover:translate-y-0"
+                />
                 {/* icons are navy; shown white until hover */}
                 <Image
                   src={social.icon}
                   alt=""
                   width={24}
                   height={24}
-                  className="pointer-events-none brightness-0 invert transition-[filter] duration-500 group-hover:brightness-100 group-hover:invert-0"
+                  className="pointer-events-none brightness-0 invert transition-[filter] duration-300 ease-linear group-hover:brightness-100 group-hover:invert-0"
                 />
               </a>
             ))}
