@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { excellenceData } from "../data";
+import SectionTitle from "@/app/components/common/SectionTitle";
 
 type Props = {
   data: typeof excellenceData;
@@ -10,7 +11,7 @@ const Excellence = ({ data }: Props) => {
     <section className="bg-cream-background py-130">
       <div className="container flex flex-col lg:flex-row gap-80 lg:justify-between">
         <div>
-          <h2 className="section-title whitespace-pre-line">{data.title}</h2>
+          <SectionTitle text={data.title} className="section-title" />
           <p className="text-description mt-20 max-w-[47ch] text-secondary">
             {data.description}
           </p>

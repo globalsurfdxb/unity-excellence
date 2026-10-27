@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { footerData } from "./data";
 import CommonButton from "./CommonButton";
+import SectionTitle from "./SectionTitle";
 import { usePressScale } from "./usePressScale";
 
 type Props = {
@@ -26,7 +27,7 @@ const Footer = ({ data }: Props) => {
         <div className="grid gap-x-40 gap-y-40 lg:grid-cols-[1fr_1fr_auto] 3xl:grid-cols-[1.2fr_1fr_auto] lg:items-center">
           {/* row 1 */}
           <div className="lg:self-start">
-            <h2 className="section-title text-white max-3xl:max-w-[20ch]">{data.title}</h2>
+            <SectionTitle text={data.title} className="section-title text-white max-3xl:max-w-[20ch]" />
             <p className="text-description mt-20 max-w-[40ch] text-white/70">{data.description}</p>
             <CommonButton label={data.button.label} href={data.button.href} className="mt-40" />
           </div>

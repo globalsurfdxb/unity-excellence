@@ -8,7 +8,7 @@ export const headerData = {
 
 export const footerData = {
   background: "/assets/images/footer/footer-bg.jpg",
-  bgShape: "/assets/images/footer/footer-bg-svg.svg",
+  bgShape: "/assets/images/footer/footer-bg-animated.svg",
   title: "Let's talk about your community",
   description:
     "We're here to listen, support, and help your community thrive. Whether you have a question, need assistance",

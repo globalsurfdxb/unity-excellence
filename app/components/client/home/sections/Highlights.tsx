@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import { highlightsData } from "../data";
 import NavButton from "@/app/components/common/NavButton";
+import SectionTitle from "@/app/components/common/SectionTitle";
 
 type Props = {
   data: typeof highlightsData;
@@ -85,7 +86,8 @@ const Highlights = ({ data }: Props) => {
           {data.slides.map((slide, i) => (
             <SwiperSlide key={i}>
               <div className="grid gap-30 lg:grid-cols-2">
-                <h2 className="section-title whitespace-pre-line text-white">{slide.title}</h2>
+                {/* replays each time its slide comes in */}
+                <SectionTitle text={slide.title} play={i === active} className="section-title text-white" />
                 <div>
                   <span className="inline-block rounded-full bg-primary px-[17.5px] py-3 3xl:min-w-[86px] text-[20px] text-white max-h-[38px] text-trim">
                     {pad(i + 1)}/

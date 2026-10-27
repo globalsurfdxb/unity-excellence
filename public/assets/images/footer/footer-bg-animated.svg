@@ -1,0 +1,397 @@
+<svg width="542" height="333" viewBox="0 0 542 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.edge{fill:none;stroke-linecap:round;animation:6s linear infinite}
+.t0{stroke:#FFFFFF;stroke-opacity:0.0735;stroke-width:2.0;stroke-dasharray:1.5 98.5;animation-name:r0}
+@keyframes r0{from{stroke-dashoffset:1.5}to{stroke-dashoffset:-98.5}}
+.t1{stroke:#F9FAFE;stroke-opacity:0.07;stroke-width:1.94;stroke-dasharray:2.08 97.92;animation-name:r1}
+@keyframes r1{from{stroke-dashoffset:2.08}to{stroke-dashoffset:-97.92}}
+.t2{stroke:#F3F6FD;stroke-opacity:0.0664;stroke-width:1.87;stroke-dasharray:2.92 97.08;animation-name:r2}
+@keyframes r2{from{stroke-dashoffset:2.92}to{stroke-dashoffset:-97.08}}
+.t3{stroke:#EDF1FB;stroke-opacity:0.0629;stroke-width:1.81;stroke-dasharray:3.91 96.09;animation-name:r3}
+@keyframes r3{from{stroke-dashoffset:3.91}to{stroke-dashoffset:-96.09}}
+.t4{stroke:#E7ECFA;stroke-opacity:0.0594;stroke-width:1.75;stroke-dasharray:5.0 95.0;animation-name:r4}
+@keyframes r4{from{stroke-dashoffset:5.0}to{stroke-dashoffset:-95.0}}
+.t5{stroke:#E0E8F9;stroke-opacity:0.0558;stroke-width:1.68;stroke-dasharray:6.17 93.83;animation-name:r5}
+@keyframes r5{from{stroke-dashoffset:6.17}to{stroke-dashoffset:-93.83}}
+.t6{stroke:#DAE3F8;stroke-opacity:0.0523;stroke-width:1.62;stroke-dasharray:7.42 92.58;animation-name:r6}
+@keyframes r6{from{stroke-dashoffset:7.42}to{stroke-dashoffset:-92.58}}
+.t7{stroke:#D4DEF7;stroke-opacity:0.0487;stroke-width:1.56;stroke-dasharray:8.74 91.26;animation-name:r7}
+@keyframes r7{from{stroke-dashoffset:8.74}to{stroke-dashoffset:-91.26}}
+.t8{stroke:#CEDAF5;stroke-opacity:0.0452;stroke-width:1.49;stroke-dasharray:10.11 89.89;animation-name:r8}
+@keyframes r8{from{stroke-dashoffset:10.11}to{stroke-dashoffset:-89.89}}
+.t9{stroke:#C8D5F4;stroke-opacity:0.0417;stroke-width:1.43;stroke-dasharray:11.53 88.47;animation-name:r9}
+@keyframes r9{from{stroke-dashoffset:11.53}to{stroke-dashoffset:-88.47}}
+.t10{stroke:#C2D0F3;stroke-opacity:0.0381;stroke-width:1.37;stroke-dasharray:13.0 87.0;animation-name:r10}
+@keyframes r10{from{stroke-dashoffset:13.0}to{stroke-dashoffset:-87.0}}
+.t11{stroke:#BCCBF2;stroke-opacity:0.0346;stroke-width:1.31;stroke-dasharray:14.52 85.48;animation-name:r11}
+@keyframes r11{from{stroke-dashoffset:14.52}to{stroke-dashoffset:-85.48}}
+.t12{stroke:#B6C7F0;stroke-opacity:0.0311;stroke-width:1.24;stroke-dasharray:16.08 83.92;animation-name:r12}
+@keyframes r12{from{stroke-dashoffset:16.08}to{stroke-dashoffset:-83.92}}
+.t13{stroke:#B0C2EF;stroke-opacity:0.0275;stroke-width:1.18;stroke-dasharray:17.68 82.32;animation-name:r13}
+@keyframes r13{from{stroke-dashoffset:17.68}to{stroke-dashoffset:-82.32}}
+.t14{stroke:#AABDEE;stroke-opacity:0.024;stroke-width:1.12;stroke-dasharray:19.32 80.68;animation-name:r14}
+@keyframes r14{from{stroke-dashoffset:19.32}to{stroke-dashoffset:-80.68}}
+.t15{stroke:#A3B9ED;stroke-opacity:0.0204;stroke-width:1.05;stroke-dasharray:20.99 79.01;animation-name:r15}
+@keyframes r15{from{stroke-dashoffset:20.99}to{stroke-dashoffset:-79.01}}
+.t16{stroke:#9DB4EC;stroke-opacity:0.0169;stroke-width:0.99;stroke-dasharray:22.69 77.31;animation-name:r16}
+@keyframes r16{from{stroke-dashoffset:22.69}to{stroke-dashoffset:-77.31}}
+.t17{stroke:#97AFEA;stroke-opacity:0.0134;stroke-width:0.93;stroke-dasharray:24.43 75.57;animation-name:r17}
+@keyframes r17{from{stroke-dashoffset:24.43}to{stroke-dashoffset:-75.57}}
+.t18{stroke:#91ABE9;stroke-opacity:0.0098;stroke-width:0.86;stroke-dasharray:26.2 73.8;animation-name:r18}
+@keyframes r18{from{stroke-dashoffset:26.2}to{stroke-dashoffset:-73.8}}
+.t19{stroke:#8BA6E8;stroke-opacity:0.0063;stroke-width:0.8;stroke-dasharray:28.0 72.0;animation-name:r19}
+@keyframes r19{from{stroke-dashoffset:28.0}to{stroke-dashoffset:-72.0}}
+@media (prefers-reduced-motion:reduce){.edge{animation:none;stroke-opacity:0}}
+</style>
+<g opacity="0.2" clip-path="url(#clip0_372_143)">
+<path d="M278.534 56.933C278.534 61.2294 275.086 64.6779 270.789 64.6779C266.493 64.6779 263.044 61.2294 263.044 56.933C263.044 52.6365 266.493 49.188 270.789 49.188C275.086 49.188 278.534 52.6365 278.534 56.933Z" fill="url(#paint0_linear_372_143)"/>
+<path d="M274.973 91.0783L271.298 84.7467L148.454 299.004C200.181 300.7 248.629 273.621 274.408 228.734L314.263 159.143L274.973 91.0783Z" fill="url(#paint1_linear_372_143)"/>
+<path d="M393.182 295.838C383.571 301.265 373.113 303.922 362.767 303.922C341.624 303.922 321.046 293.011 309.627 273.395L306.178 267.515C289.275 238.458 298.942 201.203 327.774 183.904C328.056 183.791 328.169 183.735 328.283 183.565H328.339L393.125 295.838H393.182Z" fill="url(#paint2_linear_372_143)"/>
+<path d="M302.448 70.3874H295.156L419.3 283.91C446.605 239.928 447.453 184.469 421.449 139.696L381.085 70.3308H302.505L302.448 70.3874Z" fill="url(#paint3_linear_372_143)"/>
+<path d="M538.866 70.444C538.753 81.4678 535.814 91.8698 530.669 100.802C520.098 119.118 500.368 131.499 477.642 131.555H470.858C437.278 131.725 409.803 104.703 409.238 71.0659C409.238 70.7832 409.238 70.6136 409.238 70.444H538.866Z" fill="url(#paint4_linear_372_143)"/>
+<path d="M298.266 36.2985L294.648 42.6301L541.637 41.8952C517.215 -3.78288 469.558 -32.2186 417.831 -32.049L337.612 -31.7664L298.322 36.2985H298.266Z" fill="url(#paint5_linear_372_143)"/>
+<path d="M416.53 -168.461C426.028 -162.865 433.546 -155.12 438.691 -146.188C449.262 -127.871 450.11 -104.58 438.86 -84.9068L435.468 -79.0274C418.791 -49.8568 381.65 -39.6244 352.253 -55.9622C352.027 -56.1318 351.914 -56.1884 351.688 -56.2449L416.53 -168.518V-168.461Z" fill="url(#paint6_linear_372_143)"/>
+<path d="M266.665 22.8441L270.339 29.1757L393.184 -185.082C341.457 -186.778 293.009 -159.699 267.23 -114.812L227.375 -45.2208L266.665 22.8441Z" fill="url(#paint7_linear_372_143)"/>
+<path d="M148.454 -181.916C158.064 -187.343 168.523 -190 178.868 -190C200.011 -190 220.589 -179.089 232.009 -159.473L235.457 -153.593C252.36 -124.536 242.693 -87.2809 213.862 -69.982C213.579 -69.869 213.466 -69.8124 213.353 -69.6428H213.296L148.454 -181.916Z" fill="url(#paint8_linear_372_143)"/>
+<path d="M239.189 43.478H246.482L122.394 -170.044C95.0885 -126.062 94.2405 -70.604 120.245 -25.8305L160.609 43.5346H239.189V43.478Z" fill="url(#paint9_linear_372_143)"/>
+<path d="M2.77052 43.4782C2.88358 32.4544 5.82324 22.0525 10.9677 13.1204C21.5392 -5.19604 41.269 -17.5766 63.995 -17.6332H70.7788C104.359 -17.8027 131.834 9.21965 132.399 42.8563C132.399 43.139 132.399 43.3086 132.399 43.4782H2.77052Z" fill="url(#paint10_linear_372_143)"/>
+<path d="M243.371 77.6234L246.99 71.2918L0.00012207 72.0268C24.4221 117.705 72.0787 146.141 123.806 145.971L204.025 145.688L243.315 77.6234H243.371Z" fill="url(#paint11_linear_372_143)"/>
+<path d="M125.106 282.383C115.609 276.787 108.09 269.042 102.946 260.11C92.3741 241.793 91.5261 218.502 102.776 198.829L106.168 192.949C122.845 163.779 159.987 153.546 189.383 169.884C189.61 170.054 189.723 170.11 189.949 170.167L125.106 282.44V282.383Z" fill="url(#paint12_linear_372_143)"/>
+</g>
+<g clip-path="url(#clip0_372_143)" filter="url(#edge-glow)">
+<use href="#edge0" class="edge t19" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t18" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t17" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t16" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t15" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t14" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t13" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t12" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t11" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t10" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t9" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t8" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t7" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t6" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t5" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t4" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t3" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t2" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t1" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t0" style="animation-delay:-0.00s"/>
+<use href="#edge1" class="edge t19" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t18" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t17" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t16" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t15" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t14" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t13" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t12" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t11" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t10" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t9" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t8" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t7" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t6" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t5" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t4" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t3" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t2" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t1" style="animation-delay:-0.46s"/>
+<use href="#edge1" class="edge t0" style="animation-delay:-0.46s"/>
+<use href="#edge2" class="edge t19" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t18" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t17" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t16" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t15" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t14" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t13" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t12" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t11" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t10" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t9" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t8" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t7" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t6" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t5" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t4" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t3" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t2" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t1" style="animation-delay:-0.92s"/>
+<use href="#edge2" class="edge t0" style="animation-delay:-0.92s"/>
+<use href="#edge3" class="edge t19" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t18" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t17" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t16" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t15" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t14" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t13" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t12" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t11" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t10" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t9" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t8" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t7" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t6" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t5" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t4" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t3" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t2" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t1" style="animation-delay:-1.38s"/>
+<use href="#edge3" class="edge t0" style="animation-delay:-1.38s"/>
+<use href="#edge4" class="edge t19" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t18" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t17" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t16" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t15" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t14" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t13" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t12" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t11" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t10" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t9" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t8" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t7" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t6" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t5" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t4" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t3" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t2" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t1" style="animation-delay:-1.85s"/>
+<use href="#edge4" class="edge t0" style="animation-delay:-1.85s"/>
+<use href="#edge5" class="edge t19" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t18" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t17" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t16" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t15" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t14" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t13" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t12" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t11" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t10" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t9" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t8" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t7" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t6" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t5" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t4" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t3" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t2" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t1" style="animation-delay:-2.31s"/>
+<use href="#edge5" class="edge t0" style="animation-delay:-2.31s"/>
+<use href="#edge6" class="edge t19" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t18" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t17" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t16" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t15" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t14" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t13" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t12" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t11" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t10" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t9" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t8" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t7" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t6" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t5" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t4" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t3" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t2" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t1" style="animation-delay:-2.77s"/>
+<use href="#edge6" class="edge t0" style="animation-delay:-2.77s"/>
+<use href="#edge7" class="edge t19" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t18" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t17" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t16" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t15" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t14" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t13" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t12" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t11" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t10" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t9" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t8" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t7" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t6" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t5" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t4" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t3" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t2" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t1" style="animation-delay:-3.23s"/>
+<use href="#edge7" class="edge t0" style="animation-delay:-3.23s"/>
+<use href="#edge8" class="edge t19" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t18" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t17" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t16" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t15" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t14" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t13" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t12" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t11" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t10" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t9" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t8" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t7" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t6" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t5" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t4" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t3" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t2" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t1" style="animation-delay:-3.69s"/>
+<use href="#edge8" class="edge t0" style="animation-delay:-3.69s"/>
+<use href="#edge9" class="edge t19" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t18" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t17" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t16" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t15" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t14" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t13" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t12" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t11" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t10" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t9" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t8" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t7" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t6" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t5" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t4" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t3" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t2" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t1" style="animation-delay:-4.15s"/>
+<use href="#edge9" class="edge t0" style="animation-delay:-4.15s"/>
+<use href="#edge10" class="edge t19" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t18" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t17" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t16" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t15" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t14" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t13" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t12" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t11" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t10" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t9" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t8" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t7" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t6" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t5" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t4" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t3" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t2" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t1" style="animation-delay:-4.62s"/>
+<use href="#edge10" class="edge t0" style="animation-delay:-4.62s"/>
+<use href="#edge11" class="edge t19" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t18" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t17" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t16" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t15" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t14" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t13" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t12" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t11" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t10" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t9" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t8" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t7" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t6" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t5" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t4" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t3" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t2" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t1" style="animation-delay:-5.08s"/>
+<use href="#edge11" class="edge t0" style="animation-delay:-5.08s"/>
+<use href="#edge12" class="edge t19" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t18" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t17" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t16" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t15" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t14" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t13" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t12" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t11" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t10" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t9" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t8" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t7" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t6" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t5" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t4" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t3" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t2" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t1" style="animation-delay:-5.54s"/>
+<use href="#edge12" class="edge t0" style="animation-delay:-5.54s"/>
+</g>
+<defs>
+<filter id="edge-glow" x="-5%" y="-5%" width="110%" height="110%">
+<feGaussianBlur stdDeviation="2.5" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<path id="edge0" pathLength="100" d="M278.534 56.933C278.534 61.2294 275.086 64.6779 270.789 64.6779C266.493 64.6779 263.044 61.2294 263.044 56.933C263.044 52.6365 266.493 49.188 270.789 49.188C275.086 49.188 278.534 52.6365 278.534 56.933Z"/>
+<path id="edge1" pathLength="100" d="M274.973 91.0783L271.298 84.7467L148.454 299.004C200.181 300.7 248.629 273.621 274.408 228.734L314.263 159.143L274.973 91.0783Z"/>
+<path id="edge2" pathLength="100" d="M393.182 295.838C383.571 301.265 373.113 303.922 362.767 303.922C341.624 303.922 321.046 293.011 309.627 273.395L306.178 267.515C289.275 238.458 298.942 201.203 327.774 183.904C328.056 183.791 328.169 183.735 328.283 183.565H328.339L393.125 295.838H393.182Z"/>
+<path id="edge3" pathLength="100" d="M302.448 70.3874H295.156L419.3 283.91C446.605 239.928 447.453 184.469 421.449 139.696L381.085 70.3308H302.505L302.448 70.3874Z"/>
+<path id="edge4" pathLength="100" d="M538.866 70.444C538.753 81.4678 535.814 91.8698 530.669 100.802C520.098 119.118 500.368 131.499 477.642 131.555H470.858C437.278 131.725 409.803 104.703 409.238 71.0659C409.238 70.7832 409.238 70.6136 409.238 70.444H538.866Z"/>
+<path id="edge5" pathLength="100" d="M298.266 36.2985L294.648 42.6301L541.637 41.8952C517.215 -3.78288 469.558 -32.2186 417.831 -32.049L337.612 -31.7664L298.322 36.2985H298.266Z"/>
+<path id="edge6" pathLength="100" d="M416.53 -168.461C426.028 -162.865 433.546 -155.12 438.691 -146.188C449.262 -127.871 450.11 -104.58 438.86 -84.9068L435.468 -79.0274C418.791 -49.8568 381.65 -39.6244 352.253 -55.9622C352.027 -56.1318 351.914 -56.1884 351.688 -56.2449L416.53 -168.518V-168.461Z"/>
+<path id="edge7" pathLength="100" d="M266.665 22.8441L270.339 29.1757L393.184 -185.082C341.457 -186.778 293.009 -159.699 267.23 -114.812L227.375 -45.2208L266.665 22.8441Z"/>
+<path id="edge8" pathLength="100" d="M148.454 -181.916C158.064 -187.343 168.523 -190 178.868 -190C200.011 -190 220.589 -179.089 232.009 -159.473L235.457 -153.593C252.36 -124.536 242.693 -87.2809 213.862 -69.982C213.579 -69.869 213.466 -69.8124 213.353 -69.6428H213.296L148.454 -181.916Z"/>
+<path id="edge9" pathLength="100" d="M239.189 43.478H246.482L122.394 -170.044C95.0885 -126.062 94.2405 -70.604 120.245 -25.8305L160.609 43.5346H239.189V43.478Z"/>
+<path id="edge10" pathLength="100" d="M2.77052 43.4782C2.88358 32.4544 5.82324 22.0525 10.9677 13.1204C21.5392 -5.19604 41.269 -17.5766 63.995 -17.6332H70.7788C104.359 -17.8027 131.834 9.21965 132.399 42.8563C132.399 43.139 132.399 43.3086 132.399 43.4782H2.77052Z"/>
+<path id="edge11" pathLength="100" d="M243.371 77.6234L246.99 71.2918L0.00012207 72.0268C24.4221 117.705 72.0787 146.141 123.806 145.971L204.025 145.688L243.315 77.6234H243.371Z"/>
+<path id="edge12" pathLength="100" d="M125.106 282.383C115.609 276.787 108.09 269.042 102.946 260.11C92.3741 241.793 91.5261 218.502 102.776 198.829L106.168 192.949C122.845 163.779 159.987 153.546 189.383 169.884C189.61 170.054 189.723 170.11 189.949 170.167L125.106 282.44V282.383Z"/>
+<linearGradient id="paint0_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint1_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint2_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint3_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint4_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint5_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint6_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint7_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint8_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint9_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint10_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint11_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint12_linear_372_143" x1="270.819" y1="-190" x2="270.819" y2="303.922" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_372_143">
+<rect width="542" height="333" fill="white"/>
+</clipPath>
+</defs>
+</svg>

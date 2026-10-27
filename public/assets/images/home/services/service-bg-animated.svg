@@ -1,0 +1,407 @@
+<svg width="311" height="554" viewBox="0 0 311 554" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+.edge{fill:none;stroke-linecap:round;animation:6s linear infinite}
+.t0{stroke:#FFFFFF;stroke-opacity:0.0735;stroke-width:2.0;stroke-dasharray:1.5 98.5;animation-name:r0}
+@keyframes r0{from{stroke-dashoffset:1.5}to{stroke-dashoffset:-98.5}}
+.t1{stroke:#F9FAFE;stroke-opacity:0.07;stroke-width:1.94;stroke-dasharray:2.08 97.92;animation-name:r1}
+@keyframes r1{from{stroke-dashoffset:2.08}to{stroke-dashoffset:-97.92}}
+.t2{stroke:#F3F6FD;stroke-opacity:0.0664;stroke-width:1.87;stroke-dasharray:2.92 97.08;animation-name:r2}
+@keyframes r2{from{stroke-dashoffset:2.92}to{stroke-dashoffset:-97.08}}
+.t3{stroke:#EDF1FB;stroke-opacity:0.0629;stroke-width:1.81;stroke-dasharray:3.91 96.09;animation-name:r3}
+@keyframes r3{from{stroke-dashoffset:3.91}to{stroke-dashoffset:-96.09}}
+.t4{stroke:#E7ECFA;stroke-opacity:0.0594;stroke-width:1.75;stroke-dasharray:5.0 95.0;animation-name:r4}
+@keyframes r4{from{stroke-dashoffset:5.0}to{stroke-dashoffset:-95.0}}
+.t5{stroke:#E0E8F9;stroke-opacity:0.0558;stroke-width:1.68;stroke-dasharray:6.17 93.83;animation-name:r5}
+@keyframes r5{from{stroke-dashoffset:6.17}to{stroke-dashoffset:-93.83}}
+.t6{stroke:#DAE3F8;stroke-opacity:0.0523;stroke-width:1.62;stroke-dasharray:7.42 92.58;animation-name:r6}
+@keyframes r6{from{stroke-dashoffset:7.42}to{stroke-dashoffset:-92.58}}
+.t7{stroke:#D4DEF7;stroke-opacity:0.0487;stroke-width:1.56;stroke-dasharray:8.74 91.26;animation-name:r7}
+@keyframes r7{from{stroke-dashoffset:8.74}to{stroke-dashoffset:-91.26}}
+.t8{stroke:#CEDAF5;stroke-opacity:0.0452;stroke-width:1.49;stroke-dasharray:10.11 89.89;animation-name:r8}
+@keyframes r8{from{stroke-dashoffset:10.11}to{stroke-dashoffset:-89.89}}
+.t9{stroke:#C8D5F4;stroke-opacity:0.0417;stroke-width:1.43;stroke-dasharray:11.53 88.47;animation-name:r9}
+@keyframes r9{from{stroke-dashoffset:11.53}to{stroke-dashoffset:-88.47}}
+.t10{stroke:#C2D0F3;stroke-opacity:0.0381;stroke-width:1.37;stroke-dasharray:13.0 87.0;animation-name:r10}
+@keyframes r10{from{stroke-dashoffset:13.0}to{stroke-dashoffset:-87.0}}
+.t11{stroke:#BCCBF2;stroke-opacity:0.0346;stroke-width:1.31;stroke-dasharray:14.52 85.48;animation-name:r11}
+@keyframes r11{from{stroke-dashoffset:14.52}to{stroke-dashoffset:-85.48}}
+.t12{stroke:#B6C7F0;stroke-opacity:0.0311;stroke-width:1.24;stroke-dasharray:16.08 83.92;animation-name:r12}
+@keyframes r12{from{stroke-dashoffset:16.08}to{stroke-dashoffset:-83.92}}
+.t13{stroke:#B0C2EF;stroke-opacity:0.0275;stroke-width:1.18;stroke-dasharray:17.68 82.32;animation-name:r13}
+@keyframes r13{from{stroke-dashoffset:17.68}to{stroke-dashoffset:-82.32}}
+.t14{stroke:#AABDEE;stroke-opacity:0.024;stroke-width:1.12;stroke-dasharray:19.32 80.68;animation-name:r14}
+@keyframes r14{from{stroke-dashoffset:19.32}to{stroke-dashoffset:-80.68}}
+.t15{stroke:#A3B9ED;stroke-opacity:0.0204;stroke-width:1.05;stroke-dasharray:20.99 79.01;animation-name:r15}
+@keyframes r15{from{stroke-dashoffset:20.99}to{stroke-dashoffset:-79.01}}
+.t16{stroke:#9DB4EC;stroke-opacity:0.0169;stroke-width:0.99;stroke-dasharray:22.69 77.31;animation-name:r16}
+@keyframes r16{from{stroke-dashoffset:22.69}to{stroke-dashoffset:-77.31}}
+.t17{stroke:#97AFEA;stroke-opacity:0.0134;stroke-width:0.93;stroke-dasharray:24.43 75.57;animation-name:r17}
+@keyframes r17{from{stroke-dashoffset:24.43}to{stroke-dashoffset:-75.57}}
+.t18{stroke:#91ABE9;stroke-opacity:0.0098;stroke-width:0.86;stroke-dasharray:26.2 73.8;animation-name:r18}
+@keyframes r18{from{stroke-dashoffset:26.2}to{stroke-dashoffset:-73.8}}
+.t19{stroke:#8BA6E8;stroke-opacity:0.0063;stroke-width:0.8;stroke-dasharray:28.0 72.0;animation-name:r19}
+@keyframes r19{from{stroke-dashoffset:28.0}to{stroke-dashoffset:-72.0}}
+@media (prefers-reduced-motion:reduce){.edge{animation:none;stroke-opacity:0}}
+</style>
+<g clip-path="url(#clip0_372_250)">
+<g opacity="0.4">
+<use xlink:href="#stroke0_372_250" fill="url(#paint0_linear_372_250)"/>
+<path d="M307.815 314.651L303.702 307.563L166.185 547.411C224.09 549.309 278.325 518.996 307.182 468.748L351.798 390.845L307.815 314.651Z" fill="url(#paint1_linear_372_250)"/>
+<use xlink:href="#stroke1_372_250" fill="url(#paint2_linear_372_250)"/>
+<path d="M338.573 291.488H330.409L469.382 530.514C499.948 481.278 500.897 419.196 471.786 369.075L426.601 291.425H338.636L338.573 291.488Z" fill="url(#paint3_linear_372_250)"/>
+<use xlink:href="#stroke2_372_250" fill="url(#paint4_linear_372_250)"/>
+<path d="M333.889 253.328L329.839 260.415L606.328 259.593C578.989 208.459 525.641 176.627 467.735 176.817L377.935 177.133L333.952 253.328H333.889Z" fill="url(#paint5_linear_372_250)"/>
+<use xlink:href="#stroke3_372_250" fill="url(#paint6_linear_372_250)"/>
+<path d="M298.512 238.266L302.626 245.354L440.143 5.50587C382.237 3.60733 328.003 33.9206 299.145 84.1684L254.53 162.071L298.512 238.266Z" fill="url(#paint7_linear_372_250)"/>
+<use xlink:href="#stroke4_372_250" fill="url(#paint8_linear_372_250)"/>
+<path d="M267.757 261.365H275.921L137.012 22.3394C106.445 71.5747 105.496 133.657 134.607 183.778L179.792 261.428H267.757V261.365Z" fill="url(#paint9_linear_372_250)"/>
+<path d="M272.439 299.588L276.49 292.5L0 293.323C27.3389 344.457 80.6875 376.289 138.593 376.099L228.393 375.782L272.376 299.588H272.439Z" fill="url(#paint10_linear_372_250)"/>
+<use xlink:href="#stroke5_372_250" fill="url(#paint11_linear_372_250)"/>
+<mask id="stroke6_372_250" fill="white">
+<use xlink:href="#stroke0_372_250"/>
+<path d="M307.815 314.651L303.702 307.563L166.185 547.411C224.09 549.309 278.325 518.996 307.182 468.748L351.798 390.845L307.815 314.651Z"/>
+<use xlink:href="#stroke1_372_250"/>
+<path d="M338.573 291.488H330.409L469.382 530.514C499.948 481.278 500.897 419.196 471.786 369.075L426.601 291.425H338.636L338.573 291.488Z"/>
+<use xlink:href="#stroke2_372_250"/>
+<path d="M333.889 253.328L329.839 260.415L606.328 259.593C578.989 208.459 525.641 176.627 467.735 176.817L377.935 177.133L333.952 253.328H333.889Z"/>
+<use xlink:href="#stroke3_372_250"/>
+<path d="M298.512 238.266L302.626 245.354L440.143 5.50587C382.237 3.60733 328.003 33.9206 299.145 84.1684L254.53 162.071L298.512 238.266Z"/>
+<use xlink:href="#stroke4_372_250"/>
+<path d="M267.757 261.365H275.921L137.012 22.3394C106.445 71.5747 105.496 133.657 134.607 183.778L179.792 261.428H267.757V261.365Z"/>
+<path d="M272.439 299.588L276.49 292.5L0 293.323C27.3389 344.457 80.6875 376.289 138.593 376.099L228.393 375.782L272.376 299.588H272.439Z"/>
+<use xlink:href="#stroke5_372_250"/>
+</mask>
+<path d="M3.10065 261.364L2.60068 261.359L2.5955 261.864H3.10065V261.364ZM12.2769 227.38L11.8438 227.13L11.8436 227.131L12.2769 227.38ZM71.6376 192.953V192.453H71.6364L71.6376 192.953ZM3.10065 261.364L3.60062 261.369C3.72631 249.115 6.994 237.554 12.7101 227.63L12.2769 227.38L11.8436 227.131C6.04197 237.204 2.72813 248.932 2.60068 261.359L3.10065 261.364ZM12.2769 227.38L12.7099 227.63C24.459 207.273 46.3846 193.516 71.6389 193.453L71.6376 192.953L71.6364 192.453C46.0101 192.517 23.7631 206.479 11.8438 227.13L12.2769 227.38ZM71.6376 192.953V193.453H79.2318V192.953V192.453H71.6376V192.953ZM148.212 261.364V260.864H3.10065V261.364V261.864H148.212V261.364ZM307.815 314.651L308.681 314.151L308.68 314.149L307.815 314.651ZM303.702 307.563L304.567 307.061L303.696 305.562L302.834 307.066L303.702 307.563ZM166.185 547.411L165.317 546.913L164.49 548.356L166.152 548.41L166.185 547.411ZM307.182 468.748L308.049 469.246L308.05 469.245L307.182 468.748ZM351.798 390.845L352.666 391.342L352.951 390.843L352.664 390.345L351.798 390.845ZM440.143 543.866L440.635 544.737L443.948 542.866H440.143V543.866ZM346.609 518.743L347.473 518.239L347.472 518.237L346.609 518.743ZM342.749 512.161L341.884 512.664L341.886 512.667L342.749 512.161ZM366.923 418.563L366.552 417.635L366.478 417.665L366.409 417.706L366.923 418.563ZM367.493 418.184V417.184H366.958L366.661 417.629L367.493 418.184ZM367.556 418.184L368.422 417.684L368.134 417.184H367.556V418.184ZM440.08 543.866L439.214 544.366L439.503 544.866H440.08V543.866ZM338.573 291.488V292.488H338.987L339.28 292.195L338.573 291.488ZM330.409 291.488V290.488H328.671L329.545 291.991L330.409 291.488ZM469.382 530.514L468.517 531.016L469.353 532.455L470.231 531.041L469.382 530.514ZM471.786 369.075L472.651 368.573L472.651 368.572L471.786 369.075ZM426.601 291.425L427.466 290.922L427.176 290.425H426.601V291.425ZM338.636 291.425V290.425H338.222L337.929 290.718L338.636 291.425ZM603.228 291.552L604.227 291.562L604.238 290.552H603.228V291.552ZM594.051 325.535L594.917 326.035L594.918 326.034L594.051 325.535ZM534.691 359.962V360.962H534.693L534.691 359.962ZM527.096 359.962V358.962L527.091 358.962L527.096 359.962ZM458.117 292.248H457.117V292.256L457.117 292.265L458.117 292.248ZM458.117 291.552V290.552H457.117V291.552H458.117ZM333.889 253.328V252.328H333.309L333.021 252.831L333.889 253.328ZM329.839 260.415L328.97 259.919L328.113 261.421L329.842 261.415L329.839 260.415ZM606.328 259.593L606.331 260.593L607.994 260.588L607.21 259.121L606.328 259.593ZM467.735 176.817L467.732 175.817H467.732L467.735 176.817ZM377.935 177.133L377.931 176.133L377.356 176.135L377.069 176.633L377.935 177.133ZM333.952 253.328V254.328H334.53L334.818 253.828L333.952 253.328ZM466.281 24.1115H465.281V24.6829L465.773 24.973L466.281 24.1115ZM491.088 49.0455L490.222 49.5446L490.222 49.5454L491.088 49.0455ZM491.278 117.646L492.144 118.146L492.146 118.142L491.278 117.646ZM487.481 124.227L486.615 123.728L486.613 123.731L487.481 124.227ZM394.326 150.047L393.726 150.847L393.781 150.888L393.84 150.922L394.326 150.047ZM393.693 149.731L392.827 149.231L392.164 150.379L393.451 150.701L393.693 149.731ZM466.281 24.0482H467.281V20.3172L465.415 23.5481L466.281 24.0482ZM298.512 238.266L297.646 238.766L297.647 238.768L298.512 238.266ZM302.626 245.354L301.761 245.856L302.631 247.355L303.493 245.851L302.626 245.354ZM440.143 5.50587L441.01 6.00326L441.837 4.56089L440.175 4.5064L440.143 5.50587ZM299.145 84.1684L298.278 83.6703L298.277 83.6714L299.145 84.1684ZM254.53 162.071L253.662 161.574L253.376 162.073L253.663 162.571L254.53 162.071ZM166.185 9.04967L165.693 8.17891L164.814 8.67542L165.319 9.54979L166.185 9.04967ZM259.719 34.1736L258.855 34.6767L258.856 34.6795L259.719 34.1736ZM263.579 40.7551L264.444 40.2523L264.442 40.2492L263.579 40.7551ZM239.405 134.353L239.776 135.281L239.851 135.251L239.919 135.21L239.405 134.353ZM238.835 134.732V135.732H239.37L239.667 135.287L238.835 134.732ZM238.772 134.732L237.906 135.233L238.195 135.732H238.772V134.732ZM267.757 261.365V260.365H266.757V261.365H267.757ZM275.921 261.365V262.365H277.659L276.786 260.862L275.921 261.365ZM137.012 22.3394L137.876 21.8369L137.04 20.3979L136.162 21.812L137.012 22.3394ZM134.607 183.778L133.742 184.28L133.743 184.281L134.607 183.778ZM179.792 261.428L178.928 261.931L179.217 262.428H179.792V261.428ZM267.757 261.428V262.428H268.757V261.428H267.757ZM272.439 299.588V300.588H273.02L273.308 300.084L272.439 299.588ZM276.49 292.5L277.358 292.996L278.216 291.495L276.487 291.5L276.49 292.5ZM0 293.323L-0.00297541 292.323L-1.66596 292.328L-0.881869 293.794L0 293.323ZM138.593 376.099L138.596 377.099H138.596L138.593 376.099ZM228.393 375.782L228.397 376.782L228.972 376.78L229.259 376.282L228.393 375.782ZM272.376 299.588V298.588H271.799L271.51 299.088L272.376 299.588ZM140.049 528.805H141.049V528.233L140.557 527.943L140.049 528.805ZM115.242 503.871L116.108 503.371L116.108 503.371L115.242 503.871ZM115.052 435.27L114.186 434.77L114.184 434.774L115.052 435.27ZM118.849 428.689L119.715 429.188L119.717 429.185L118.849 428.689ZM212.003 402.869L212.603 402.069L212.549 402.028L212.489 401.995L212.003 402.869ZM212.636 403.185L213.502 403.685L214.166 402.537L212.879 402.215L212.636 403.185ZM140.049 528.868H139.049V532.599L140.915 529.368L140.049 528.868ZM311.802 276.427H310.802C310.802 280.684 307.39 284.097 303.132 284.097V285.097V286.097C308.494 286.097 312.802 281.789 312.802 276.427H311.802ZM303.132 285.097V284.097C298.875 284.097 295.462 280.684 295.462 276.427H294.462H293.462C293.462 281.789 297.77 286.097 303.132 286.097V285.097ZM294.462 276.427H295.462C295.462 272.169 298.875 268.757 303.132 268.757V267.757V266.757C297.77 266.757 293.462 271.065 293.462 276.427H294.462ZM303.132 267.757V268.757C307.39 268.757 310.802 272.169 310.802 276.427H311.802H312.802C312.802 271.065 308.494 266.757 303.132 266.757V267.757ZM307.815 314.651L308.68 314.149L304.567 307.061L303.702 307.563L302.837 308.065L306.95 315.153L307.815 314.651ZM303.702 307.563L302.834 307.066L165.317 546.913L166.185 547.411L167.052 547.908L304.569 308.06L303.702 307.563ZM166.185 547.411L166.152 548.41C224.428 550.321 279.008 519.814 308.049 469.246L307.182 468.748L306.315 468.25C277.641 518.178 223.752 548.298 166.217 546.411L166.185 547.411ZM307.182 468.748L308.05 469.245L352.666 391.342L351.798 390.845L350.93 390.348L306.315 468.251L307.182 468.748ZM351.798 390.845L352.664 390.345L308.681 314.151L307.815 314.651L306.949 315.151L350.932 391.345L351.798 390.845ZM440.143 543.866L439.652 542.996C429.043 548.986 417.505 551.916 406.096 551.916V552.916V553.916C417.85 553.916 429.727 550.897 440.635 544.737L440.143 543.866ZM406.096 552.916V551.916C382.769 551.916 360.07 539.879 347.473 518.239L346.609 518.743L345.745 519.246C358.715 541.526 382.087 553.916 406.096 553.916V552.916ZM346.609 518.743L347.472 518.237L343.611 511.655L342.749 512.161L341.886 512.667L345.746 519.248L346.609 518.743ZM342.749 512.161L343.613 511.658C324.967 479.605 335.63 438.506 367.438 419.421L366.923 418.563L366.409 417.706C333.667 437.351 322.686 479.661 341.884 512.664L342.749 512.161ZM366.923 418.563L367.295 419.492C367.442 419.433 367.639 419.354 367.816 419.241C368.033 419.103 368.193 418.937 368.325 418.738L367.493 418.184L366.661 417.629C366.658 417.633 366.667 417.619 366.688 417.598C366.71 417.576 366.73 417.561 366.742 417.554C366.751 417.548 366.746 417.553 366.712 417.568C366.677 417.584 366.629 417.604 366.552 417.635L366.923 418.563ZM367.493 418.184V419.184H367.556V418.184V417.184H367.493V418.184ZM367.556 418.184L366.69 418.683L439.214 544.366L440.08 543.866L440.946 543.367L368.422 417.684L367.556 418.184ZM440.08 543.866V544.866H440.143V543.866V542.866H440.08V543.866ZM338.573 291.488V290.488H330.409V291.488V292.488H338.573V291.488ZM330.409 291.488L329.545 291.991L468.517 531.016L469.382 530.514L470.246 530.011L331.274 290.986L330.409 291.488ZM469.382 530.514L470.231 531.041C500.992 481.492 501.948 419.014 472.651 368.573L471.786 369.075L470.922 369.577C499.847 419.378 498.904 481.064 468.532 529.986L469.382 530.514ZM471.786 369.075L472.651 368.572L427.466 290.922L426.601 291.425L425.737 291.928L470.922 369.578L471.786 369.075ZM426.601 291.425V290.425H338.636V291.425V292.425H426.601V291.425ZM338.636 291.425L337.929 290.718L337.865 290.782L338.573 291.488L339.28 292.195L339.343 292.132L338.636 291.425ZM603.228 291.552L602.228 291.541C602.103 303.71 598.858 315.186 593.185 325.036L594.051 325.535L594.918 326.034C600.762 315.887 604.099 304.074 604.227 291.562L603.228 291.552ZM594.051 325.535L593.185 325.035C581.521 345.245 559.756 358.9 534.688 358.962L534.691 359.962L534.693 360.962C560.505 360.898 582.913 346.834 594.917 326.035L594.051 325.535ZM534.691 359.962V358.962H527.096V359.962V360.962H534.691V359.962ZM527.096 359.962L527.091 358.962C490.052 359.149 459.74 329.341 459.116 292.231L458.117 292.248L457.117 292.265C457.759 330.463 488.959 361.155 527.102 360.962L527.096 359.962ZM458.117 292.248H459.117V291.552H458.117H457.117V292.248H458.117ZM458.117 291.552V292.552H603.228V291.552V290.552H458.117V291.552ZM333.889 253.328L333.021 252.831L328.97 259.919L329.839 260.415L330.707 260.912L334.757 253.824L333.889 253.328ZM329.839 260.415L329.842 261.415L606.331 260.593L606.328 259.593L606.325 258.593L329.836 259.415L329.839 260.415ZM606.328 259.593L607.21 259.121C579.697 207.661 526.008 175.626 467.732 175.817L467.735 176.817L467.739 177.817C525.274 177.628 578.282 209.257 605.446 260.064L606.328 259.593ZM467.735 176.817L467.732 175.817L377.931 176.133L377.935 177.133L377.938 178.133L467.739 177.817L467.735 176.817ZM377.935 177.133L377.069 176.633L333.086 252.828L333.952 253.328L334.818 253.828L378.801 177.633L377.935 177.133ZM333.952 253.328V252.328H333.889V253.328V254.328H333.952V253.328ZM466.281 24.1115L465.773 24.973C476.255 31.1499 484.548 39.6947 490.222 49.5446L491.088 49.0455L491.955 48.5464C486.11 38.3985 477.57 29.6034 466.788 23.2499L466.281 24.1115ZM491.088 49.0455L490.222 49.5454C501.886 69.7549 502.819 95.4485 490.41 117.149L491.278 117.646L492.146 118.142C504.924 95.7972 503.958 69.3444 491.954 48.5457L491.088 49.0455ZM491.278 117.646L490.412 117.146L486.615 123.728L487.481 124.227L488.347 124.727L492.144 118.146L491.278 117.646ZM487.481 124.227L486.613 123.731C468.218 155.907 427.245 167.199 394.812 149.173L394.326 150.047L393.84 150.922C427.223 169.475 469.406 157.857 488.349 124.724L487.481 124.227ZM394.326 150.047L394.926 149.247C394.783 149.14 394.632 149.035 394.457 148.947C394.274 148.856 394.103 148.803 393.936 148.761L393.693 149.731L393.451 150.701C393.537 150.723 393.556 150.733 393.563 150.736C393.578 150.744 393.617 150.765 393.726 150.847L394.326 150.047ZM393.693 149.731L394.559 150.231L467.147 24.5483L466.281 24.0482L465.415 23.5481L392.827 149.231L393.693 149.731ZM466.281 24.0482H465.281V24.1115H466.281H467.281V24.0482H466.281ZM298.512 238.266L297.647 238.768L301.761 245.856L302.626 245.354L303.491 244.852L299.377 237.764L298.512 238.266ZM302.626 245.354L303.493 245.851L441.01 6.00326L440.143 5.50587L439.275 5.00847L301.758 244.856L302.626 245.354ZM440.143 5.50587L440.175 4.5064C381.899 2.59571 327.319 33.1029 298.278 83.6703L299.145 84.1684L300.012 84.6664C328.686 34.7383 382.575 4.61895 440.11 6.50533L440.143 5.50587ZM299.145 84.1684L298.277 83.6714L253.662 161.574L254.53 162.071L255.397 162.568L300.013 84.6653L299.145 84.1684ZM254.53 162.071L253.663 162.571L297.646 238.766L298.512 238.266L299.378 237.766L255.396 161.572L254.53 162.071ZM166.185 9.04967L166.676 9.92042C177.285 3.92988 188.823 1 200.232 1V0V-1C188.478 -1 176.601 2.01885 165.693 8.17891L166.185 9.04967ZM200.232 0V1C223.559 1 246.258 13.0374 258.855 34.6767L259.719 34.1736L260.583 33.6705C247.613 11.3903 224.241 -1 200.232 -1V0ZM259.719 34.1736L258.856 34.6795L262.717 41.2611L263.579 40.7551L264.442 40.2492L260.582 33.6676L259.719 34.1736ZM263.579 40.7551L262.715 41.258C281.361 73.3111 270.698 114.41 238.89 133.495L239.405 134.353L239.919 135.21C272.661 115.565 283.642 73.2555 264.444 40.2523L263.579 40.7551ZM239.405 134.353L239.033 133.424C238.886 133.483 238.69 133.562 238.512 133.675C238.296 133.813 238.135 133.979 238.003 134.178L238.835 134.732L239.667 135.287C239.67 135.283 239.661 135.297 239.64 135.318C239.618 135.34 239.598 135.355 239.586 135.363C239.577 135.368 239.582 135.364 239.616 135.348C239.651 135.332 239.699 135.312 239.776 135.281L239.405 134.353ZM238.835 134.732V133.732H238.772V134.732V135.732H238.835V134.732ZM238.772 134.732L239.638 134.232L167.051 8.54954L166.185 9.04967L165.319 9.54979L237.906 135.233L238.772 134.732ZM267.757 261.365V262.365H275.921V261.365V260.365H267.757V261.365ZM275.921 261.365L276.786 260.862L137.876 21.8369L137.012 22.3394L136.147 22.8419L275.056 261.867L275.921 261.365ZM137.012 22.3394L136.162 21.812C105.401 71.3609 104.446 133.839 133.742 184.28L134.607 183.778L135.472 183.276C106.547 133.474 107.49 71.7885 137.861 22.8668L137.012 22.3394ZM134.607 183.778L133.743 184.281L178.928 261.931L179.792 261.428L180.656 260.925L135.471 183.275L134.607 183.778ZM179.792 261.428V262.428H267.757V261.428V260.428H179.792V261.428ZM267.757 261.428H268.757V261.365H267.757H266.757V261.428H267.757ZM272.439 299.588L273.308 300.084L277.358 292.996L276.49 292.5L275.621 292.004L271.571 299.092L272.439 299.588ZM276.49 292.5L276.487 291.5L-0.00297541 292.323L0 293.323L0.00297541 294.323L276.492 293.5L276.49 292.5ZM0 293.323L-0.881869 293.794C26.6315 345.254 80.3207 377.29 138.596 377.099L138.593 376.099L138.589 375.099C81.0544 375.287 28.0462 343.659 0.881869 292.851L0 293.323ZM138.593 376.099L138.596 377.099L228.397 376.782L228.393 375.782L228.39 374.782L138.589 375.099L138.593 376.099ZM228.393 375.782L229.259 376.282L273.242 300.088L272.376 299.588L271.51 299.088L227.527 375.282L228.393 375.782ZM272.376 299.588V300.588H272.439V299.588V298.588H272.376V299.588ZM140.049 528.805L140.557 527.943C130.075 521.766 121.781 513.221 116.108 503.371L115.242 503.871L114.375 504.37C120.22 514.518 128.76 523.313 139.541 529.666L140.049 528.805ZM115.242 503.871L116.108 503.371C104.444 483.161 103.51 457.467 115.92 435.767L115.052 435.27L114.184 434.774C101.406 457.119 102.371 483.572 114.376 504.37L115.242 503.871ZM115.052 435.27L115.918 435.77L119.715 429.188L118.849 428.689L117.983 428.189L114.186 434.77L115.052 435.27ZM118.849 428.689L119.717 429.185C138.112 397.009 179.085 385.717 211.518 403.743L212.003 402.869L212.489 401.995C179.106 383.441 136.923 395.059 117.981 428.192L118.849 428.689ZM212.003 402.869L211.403 403.669C211.547 403.776 211.698 403.881 211.873 403.969C212.056 404.06 212.226 404.113 212.394 404.155L212.636 403.185L212.879 402.215C212.793 402.193 212.774 402.183 212.767 402.18C212.752 402.172 212.713 402.151 212.603 402.069L212.003 402.869ZM212.636 403.185L211.77 402.685L139.183 528.368L140.049 528.868L140.915 529.368L213.502 403.685L212.636 403.185ZM140.049 528.868H141.049V528.805H140.049H139.049V528.868H140.049Z" fill="url(#paint12_linear_372_250)" mask="url(#stroke6_372_250)"/>
+</g>
+<path opacity="0.4" d="M606.328 259.593C578.989 208.459 525.641 176.627 467.735 176.817L377.935 177.133M491.088 49.0455C502.922 69.5497 503.871 95.6228 491.278 117.646L487.481 124.227M302.626 245.354L298.512 238.266L254.529 162.071L299.145 84.1684M166.185 9.04967C176.943 2.97437 188.651 0 200.232 0C223.9 0 246.936 12.2139 259.719 34.1736L263.579 40.7551C282.501 73.2833 271.68 114.988 239.405 134.353C239.088 134.479 238.962 134.543 238.835 134.732H238.772L166.185 9.04967ZM267.757 261.365H275.921L137.012 22.3394C106.445 71.5746 105.496 133.657 134.607 183.778L179.792 261.428H267.757V261.365ZM3.10059 261.364C3.22715 249.023 6.51792 237.379 12.2768 227.38C24.111 206.876 46.1973 193.017 71.6376 192.953H79.2317C116.823 192.763 147.579 223.013 148.212 260.668C148.212 260.984 148.212 261.174 148.212 261.364H3.10059Z" stroke="url(#paint13_linear_372_250)"/>
+</g>
+<g clip-path="url(#clip0_372_250)" filter="url(#edge-glow)">
+<use href="#edge0" class="edge t19" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t18" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t17" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t16" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t15" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t14" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t13" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t12" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t11" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t10" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t9" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t8" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t7" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t6" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t5" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t4" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t3" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t2" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t1" style="animation-delay:-0.00s"/>
+<use href="#edge0" class="edge t0" style="animation-delay:-0.00s"/>
+<use href="#edge1" class="edge t19" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t18" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t17" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t16" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t15" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t14" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t13" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t12" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t11" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t10" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t9" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t8" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t7" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t6" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t5" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t4" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t3" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t2" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t1" style="animation-delay:-0.50s"/>
+<use href="#edge1" class="edge t0" style="animation-delay:-0.50s"/>
+<use href="#edge2" class="edge t19" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t18" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t17" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t16" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t15" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t14" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t13" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t12" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t11" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t10" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t9" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t8" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t7" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t6" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t5" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t4" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t3" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t2" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t1" style="animation-delay:-1.00s"/>
+<use href="#edge2" class="edge t0" style="animation-delay:-1.00s"/>
+<use href="#edge3" class="edge t19" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t18" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t17" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t16" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t15" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t14" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t13" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t12" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t11" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t10" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t9" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t8" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t7" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t6" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t5" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t4" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t3" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t2" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t1" style="animation-delay:-1.50s"/>
+<use href="#edge3" class="edge t0" style="animation-delay:-1.50s"/>
+<use href="#edge4" class="edge t19" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t18" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t17" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t16" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t15" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t14" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t13" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t12" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t11" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t10" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t9" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t8" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t7" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t6" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t5" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t4" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t3" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t2" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t1" style="animation-delay:-2.00s"/>
+<use href="#edge4" class="edge t0" style="animation-delay:-2.00s"/>
+<use href="#edge5" class="edge t19" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t18" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t17" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t16" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t15" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t14" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t13" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t12" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t11" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t10" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t9" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t8" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t7" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t6" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t5" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t4" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t3" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t2" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t1" style="animation-delay:-2.50s"/>
+<use href="#edge5" class="edge t0" style="animation-delay:-2.50s"/>
+<use href="#edge6" class="edge t19" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t18" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t17" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t16" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t15" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t14" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t13" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t12" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t11" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t10" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t9" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t8" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t7" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t6" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t5" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t4" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t3" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t2" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t1" style="animation-delay:-3.00s"/>
+<use href="#edge6" class="edge t0" style="animation-delay:-3.00s"/>
+<use href="#edge7" class="edge t19" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t18" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t17" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t16" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t15" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t14" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t13" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t12" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t11" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t10" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t9" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t8" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t7" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t6" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t5" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t4" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t3" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t2" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t1" style="animation-delay:-3.50s"/>
+<use href="#edge7" class="edge t0" style="animation-delay:-3.50s"/>
+<use href="#edge8" class="edge t19" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t18" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t17" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t16" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t15" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t14" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t13" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t12" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t11" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t10" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t9" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t8" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t7" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t6" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t5" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t4" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t3" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t2" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t1" style="animation-delay:-4.00s"/>
+<use href="#edge8" class="edge t0" style="animation-delay:-4.00s"/>
+<use href="#edge9" class="edge t19" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t18" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t17" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t16" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t15" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t14" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t13" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t12" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t11" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t10" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t9" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t8" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t7" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t6" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t5" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t4" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t3" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t2" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t1" style="animation-delay:-4.50s"/>
+<use href="#edge9" class="edge t0" style="animation-delay:-4.50s"/>
+<use href="#edge10" class="edge t19" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t18" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t17" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t16" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t15" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t14" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t13" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t12" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t11" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t10" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t9" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t8" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t7" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t6" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t5" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t4" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t3" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t2" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t1" style="animation-delay:-5.00s"/>
+<use href="#edge10" class="edge t0" style="animation-delay:-5.00s"/>
+<use href="#edge11" class="edge t19" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t18" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t17" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t16" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t15" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t14" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t13" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t12" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t11" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t10" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t9" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t8" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t7" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t6" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t5" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t4" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t3" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t2" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t1" style="animation-delay:-5.50s"/>
+<use href="#edge11" class="edge t0" style="animation-delay:-5.50s"/>
+</g>
+<defs>
+<filter id="edge-glow" x="-5%" y="-5%" width="110%" height="110%">
+<feGaussianBlur stdDeviation="2.5" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<path id="edge0" pathLength="100" d="M307.815 314.651L303.702 307.563L166.185 547.411C224.09 549.309 278.325 518.996 307.182 468.748L351.798 390.845L307.815 314.651Z"/>
+<path id="edge1" pathLength="100" d="M338.573 291.488H330.409L469.382 530.514C499.948 481.278 500.897 419.196 471.786 369.075L426.601 291.425H338.636L338.573 291.488Z"/>
+<path id="edge2" pathLength="100" d="M333.889 253.328L329.839 260.415L606.328 259.593C578.989 208.459 525.641 176.627 467.735 176.817L377.935 177.133L333.952 253.328H333.889Z"/>
+<path id="edge3" pathLength="100" d="M298.512 238.266L302.626 245.354L440.143 5.50587C382.237 3.60733 328.003 33.9206 299.145 84.1684L254.53 162.071L298.512 238.266Z"/>
+<path id="edge4" pathLength="100" d="M267.757 261.365H275.921L137.012 22.3394C106.445 71.5747 105.496 133.657 134.607 183.778L179.792 261.428H267.757V261.365Z"/>
+<path id="edge5" pathLength="100" d="M272.439 299.588L276.49 292.5L0 293.323C27.3389 344.457 80.6875 376.289 138.593 376.099L228.393 375.782L272.376 299.588H272.439Z"/>
+<path id="edge6" pathLength="100" d="M311.802 276.427C311.802 281.236 307.942 285.097 303.132 285.097C298.323 285.097 294.462 281.236 294.462 276.427C294.462 271.617 298.323 267.757 303.132 267.757C307.942 267.757 311.802 271.617 311.802 276.427Z"/>
+<path id="edge7" pathLength="100" d="M440.143 543.866C429.385 549.942 417.677 552.916 406.096 552.916C382.428 552.916 359.392 540.702 346.609 518.743L342.749 512.161C323.827 479.633 334.648 437.928 366.923 418.563C367.24 418.437 367.366 418.373 367.493 418.184H367.556L440.08 543.866H440.143Z"/>
+<path id="edge8" pathLength="100" d="M603.228 291.552C603.101 303.892 599.81 315.536 594.051 325.535C582.217 346.039 560.131 359.899 534.691 359.962H527.096C489.506 360.152 458.749 329.902 458.117 292.248C458.117 291.931 458.117 291.741 458.117 291.552H603.228Z"/>
+<path id="edge9" pathLength="100" d="M466.281 24.1115C476.912 30.3766 485.329 39.0466 491.088 49.0455C502.922 69.5497 503.871 95.6228 491.278 117.646L487.481 124.227C468.812 156.882 427.234 168.337 394.326 150.047C394.073 149.858 393.947 149.794 393.693 149.731L466.281 24.0482V24.1115Z"/>
+<path id="edge10" pathLength="100" d="M166.185 9.04967C176.943 2.97437 188.651 0 200.232 0C223.9 0 246.936 12.2139 259.719 34.1736L263.579 40.7551C282.501 73.2833 271.68 114.988 239.405 134.353C239.088 134.479 238.962 134.543 238.835 134.732H238.772L166.185 9.04967Z"/>
+<path id="edge11" pathLength="100" d="M140.049 528.805C129.417 522.539 121.001 513.869 115.242 503.871C103.407 483.366 102.458 457.293 115.052 435.27L118.849 428.689C137.518 396.034 179.096 384.579 212.003 402.869C212.257 403.058 212.383 403.122 212.636 403.185L140.049 528.868V528.805Z"/>
+<linearGradient id="paint0_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint2_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint3_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint4_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint5_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint6_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint7_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint8_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint9_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint10_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint11_linear_372_250" x1="100.666" y1="21.3122" x2="408.559" y2="348.703" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint12_linear_372_250" x1="230.766" y1="53.1608" x2="318.965" y2="222.711" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.342064" stop-color="white"/>
+<stop offset="0.6855" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+<linearGradient id="paint13_linear_372_250" x1="175.189" y1="55.5772" x2="217.073" y2="125.25" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0"/>
+<stop offset="0.342064" stop-color="white"/>
+<stop offset="0.6855" stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0.2"/>
+</linearGradient>
+<clipPath id="clip0_372_250">
+<rect width="311" height="553.08" fill="white"/>
+</clipPath>
+<path id="stroke0_372_250" d="M311.802 276.427C311.802 281.236 307.942 285.097 303.132 285.097C298.323 285.097 294.462 281.236 294.462 276.427C294.462 271.617 298.323 267.757 303.132 267.757C307.942 267.757 311.802 271.617 311.802 276.427Z"/>
+<path id="stroke1_372_250" d="M440.143 543.866C429.385 549.942 417.677 552.916 406.096 552.916C382.428 552.916 359.392 540.702 346.609 518.743L342.749 512.161C323.827 479.633 334.648 437.928 366.923 418.563C367.24 418.437 367.366 418.373 367.493 418.184H367.556L440.08 543.866H440.143Z"/>
+<path id="stroke2_372_250" d="M603.228 291.552C603.101 303.892 599.81 315.536 594.051 325.535C582.217 346.039 560.131 359.899 534.691 359.962H527.096C489.506 360.152 458.749 329.902 458.117 292.248C458.117 291.931 458.117 291.741 458.117 291.552H603.228Z"/>
+<path id="stroke3_372_250" d="M466.281 24.1115C476.912 30.3766 485.329 39.0466 491.088 49.0455C502.922 69.5497 503.871 95.6228 491.278 117.646L487.481 124.227C468.812 156.882 427.234 168.337 394.326 150.047C394.073 149.858 393.947 149.794 393.693 149.731L466.281 24.0482V24.1115Z"/>
+<path id="stroke4_372_250" d="M166.185 9.04967C176.943 2.97437 188.651 0 200.232 0C223.9 0 246.936 12.2139 259.719 34.1736L263.579 40.7551C282.501 73.2833 271.68 114.988 239.405 134.353C239.088 134.479 238.962 134.543 238.835 134.732H238.772L166.185 9.04967Z"/>
+<path id="stroke5_372_250" d="M140.049 528.805C129.417 522.539 121.001 513.869 115.242 503.871C103.407 483.366 102.458 457.293 115.052 435.27L118.849 428.689C137.518 396.034 179.096 384.579 212.003 402.869C212.257 403.058 212.383 403.122 212.636 403.185L140.049 528.868V528.805Z"/>
+</defs>
+</svg>
