@@ -9,6 +9,8 @@ import "swiper/css/effect-fade";
 import { highlightsData } from "../data";
 import NavButton from "@/app/components/common/NavButton";
 import SectionTitle from "@/app/components/common/SectionTitle";
+import { motion } from "framer-motion";
+import { moveUp } from "@/app/components/common/motionVariants";
 
 type Props = {
   data: typeof highlightsData;
@@ -114,7 +116,9 @@ const Highlights = ({ data }: Props) => {
           muted
           playsInline
           preload="metadata"
-          onEnded={() => (i === total - 1 ? swiper?.slideTo(0) : swiper?.slideNext())}
+          onEnded={() =>
+            i === total - 1 ? swiper?.slideTo(0) : swiper?.slideNext()
+          }
           className={`absolute inset-0 size-full object-cover transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
         />
       ))}
@@ -122,11 +126,23 @@ const Highlights = ({ data }: Props) => {
 
       <div className="container relative flex h-full flex-col justify-center">
         <div className="flex gap-2">
-          <NavButton direction="prev" onClick={() => swiper?.slidePrev()} disabled={active === 0} />
-          <NavButton direction="next" onClick={() => swiper?.slideNext()} disabled={active === total - 1} />
+          <NavButton
+            direction="prev"
+            onClick={() => swiper?.slidePrev()}
+            disabled={active === 0}
+          />
+          <NavButton
+            direction="next"
+            onClick={() => swiper?.slideNext()}
+            disabled={active === total - 1}
+          />
         </div>
         <div className="mt-60 h-px bg-white/25">
-          <div ref={bar} className="h-full origin-left bg-white" style={{ transform: "scaleX(0)" }} />
+          <div
+            ref={bar}
+            className="h-full origin-left bg-white"
+            style={{ transform: "scaleX(0)" }}
+          />
         </div>
 
         <Swiper
@@ -141,14 +157,37 @@ const Highlights = ({ data }: Props) => {
             <SwiperSlide key={i}>
               <div className="grid gap-30 lg:grid-cols-2">
                 {/* replays each time its slide comes in */}
-                <SectionTitle text={slide.title} play={i === active} className="section-title text-white" />
+                <SectionTitle
+                  text={slide.title}
+                  play={i === active}
+                  className="section-title text-white"
+                />
                 <div>
-                  <span className="inline-block rounded-full bg-primary px-[17.5px] py-3 3xl:min-w-[86px] text-[20px] text-white max-h-[38px] text-trim">
+                  <motion.span
+                    initial="hidden"
+                    whileInView="show"
+                    variants={moveUp(0.1)}
+                    className="inline-block rounded-full bg-primary px-[17.5px] py-3 3xl:min-w-[86px] text-[20px] text-white max-h-[38px] text-trim"
+                  >
                     {pad(i + 1)}/
                     <span className="text-white/40">{pad(total)}</span>
-                  </span>
-                  <h3 className="text-subtitle mt-20 max-w-[22ch] text-white">{slide.subtitle}</h3>
-                  <p className="text-description mt-20 max-w-[35ch] text-white/70">{slide.description}</p>
+                  </motion.span>
+                  <motion.h3
+                    initial="hidden"
+                    whileInView="show"
+                    variants={moveUp(0.2)}
+                    className="text-subtitle mt-20 max-w-[22ch] text-white"
+                  >
+                    {slide.subtitle}
+                  </motion.h3>
+                  <motion.p
+                    initial="hidden"
+                    whileInView="show"
+                    variants={moveUp(0.3)}
+                    className="text-description mt-20 max-w-[35ch] text-white/70"
+                  >
+                    {slide.description}
+                  </motion.p>
                 </div>
               </div>
             </SwiperSlide>
