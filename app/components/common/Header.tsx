@@ -36,6 +36,7 @@ const Header = ({ data }: Props) => {
         <button
           type="button"
           aria-label="Open menu"
+          data-intro="header-end"
           {...pressScale}
           className="group relative isolate order-last flex size-[50px] cursor-pointer items-center justify-center justify-self-start overflow-hidden rounded-full border border-border-color md:order-none"
         >
@@ -54,18 +55,15 @@ const Header = ({ data }: Props) => {
           />
         </button>
 
-        <Link href="/" aria-label="Unity Excellence home" className="justify-self-center">
+        <Link href="/" aria-label="Unity Excellence home" data-intro="header-logo" className="justify-self-center">
           <Image src={data.logo} alt="Unity Excellence" width={128} height={114} preload
             className={`h-auto pointer-events-none transition-[width,filter] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${solid ? "w-[70px] lg:w-[100px]" : "w-[90px] brightness-0 invert lg:w-[128px]"}`}
           />
         </Link>
 
-        <CommonButton
-          label={data.button.label}
-          href={data.button.href}
-          variant={solid ? "dark" : "light"}
-          className="justify-self-end max-md:hidden"
-        />
+        <div data-intro="header-end" className="justify-self-end max-md:hidden">
+          <CommonButton label={data.button.label} href={data.button.href} variant={solid ? "dark" : "light"} />
+        </div>
       </div>
     </header>
   );

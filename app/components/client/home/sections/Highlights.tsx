@@ -19,26 +19,80 @@ const pad = (n: number) => String(n).padStart(2, "0");
 const Highlights = ({ data }: Props) => {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const [active, setActive] = useState(0);
+  const [inView, setInView] = useState(false);
+  // stays true once the section has first been on screen, so the sources are only attached (and downloaded) from then on
+  const [armed, setArmed] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
   const videos = useRef<(HTMLVideoElement | null)[]>([]);
   const bar = useRef<HTMLDivElement>(null);
   const total = data.slides.length;
 
-  // play only the active video and fill the line with its progress
+  // only play while the section is actually on screen, so the video isn't downloaded on page load.
+  // in-viewport isn't enough: on load this section sits under the hero, so also check nothing covers it
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    let frame = 0;
+    const check = () => {
+      frame = 0;
+      const rect = section.getBoundingClientRect();
+      const top = Math.max(rect.top, 0);
+      const bottom = Math.min(rect.bottom, window.innerHeight);
+      const visible =
+        bottom > top &&
+        [bottom - 1, (top + bottom) / 2].some((y) => {
+          const hit = document.elementFromPoint(window.innerWidth / 2, y);
+          return !!hit && section.contains(hit);
+        });
+      setInView(visible);
+      if (visible) setArmed(true);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(check);
+    };
+
+    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      } else {
+        window.removeEventListener("scroll", onScroll);
+        setInView(false);
+      }
+    });
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  // a new slide starts its video from the beginning; the rest stay paused
   useEffect(() => {
     videos.current.forEach((video, i) => {
       if (!video) return;
-      if (i === active) {
-        video.currentTime = 0;
-        video.play().catch(() => {});
-      } else {
-        video.pause();
-      }
+      if (i === active) video.currentTime = 0;
+      else video.pause();
     });
+  }, [active]);
+
+  // play the active video while in view and fill the line with its progress; pause and stop the loop when out of view
+  useEffect(() => {
+    const video = videos.current[active];
+    if (!video) return;
+    if (!inView) {
+      video.pause();
+      return;
+    }
+    video.play().catch(() => {});
 
     let frame: number;
     const tick = () => {
-      const video = videos.current[active];
-      if (video?.duration && bar.current) {
+      if (video.duration && bar.current) {
         bar.current.style.transform = `scaleX(${video.currentTime / video.duration})`;
       }
       frame = requestAnimationFrame(tick);
@@ -46,17 +100,17 @@ const Highlights = ({ data }: Props) => {
     tick();
 
     return () => cancelAnimationFrame(frame);
-  }, [active]);
+  }, [active, inView]);
 
   return (
-    <section className="relative h-[88.5vh] overflow-hidden">
+    <section ref={sectionRef} className="relative h-[88.5vh] overflow-hidden">
       {data.slides.map((slide, i) => (
         <video
           key={i}
           ref={(el) => {
             videos.current[i] = el;
           }}
-          src={slide.video}
+          src={armed ? slide.video : undefined}
           muted
           playsInline
           preload="metadata"

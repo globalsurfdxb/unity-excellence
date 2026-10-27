@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { heroData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
+import HeroTitle from "../HeroTitle";
 
 type Props = {
   data: typeof heroData;
@@ -13,6 +14,9 @@ const Hero = ({ data }: Props) => {
         src={data.image}
         alt={data.imageAlt}
         fill
+        data-intro="hero"
+        loading="eager"
+        fetchPriority="high"
         className="object-cover"
       />
       <div className="absolute inset-0 bg-black/30 bg-linear-to-b from-black/80 to-transparent to-[61.87%]" />
@@ -26,10 +30,10 @@ const Hero = ({ data }: Props) => {
       />
 
       <div className="container relative flex h-full flex-col justify-end pb-130">
-        <h1 className="hero-title whitespace-pre-line text-white mb-30">
-          {data.title}
-        </h1>
-        <CommonButton label={data.button.label} href={data.button.href} />
+        <HeroTitle text={data.title} className="hero-title text-white mb-30" />
+        <div data-intro="hero-button" className="w-fit">
+          <CommonButton label={data.button.label} href={data.button.href} />
+        </div>
       </div>
     </section>
   );

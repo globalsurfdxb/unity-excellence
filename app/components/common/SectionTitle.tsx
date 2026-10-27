@@ -9,6 +9,8 @@ type Props = {
   tag?: ElementType;
   // false resets the title so it replays when true again, e.g. the active slide of a slider
   play?: boolean;
+  // opacity of the letters before they play; 0 keeps the title hidden until its entrance
+  startOpacity?: number;
 };
 
 // on screen and not covered, e.g. by the footer reveal or another slide
@@ -18,7 +20,7 @@ const isUncovered = (el: HTMLElement) => {
   return !!hit && el.contains(hit);
 };
 
-const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true }: Props) => {
+const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true, startOpacity = 0.4 }: Props) => {
   const rootRef = useRef<HTMLElement>(null);
   const timeline = useRef<gsap.core.Timeline | null>(null);
   const inView = useRef(false);
@@ -44,7 +46,7 @@ const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true }: Pr
     const tint = `rgb(${own.slice(0, 3).map((c, i) => Math.round(c * 0.3 + light[i] * 0.7)).join(",")})`;
 
     const ctx = gsap.context(() => {
-      gsap.set(chars, { opacity: 0.4, transformOrigin: "50% 50%", willChange: "transform" });
+      gsap.set(chars, { opacity: startOpacity, transformOrigin: "50% 50%", willChange: "transform" });
       timeline.current = gsap.timeline({ paused: true }).to(chars, {
         keyframes: [
           { scale: 1.18, opacity: 1, color: tint, duration: 0.23, ease: "power2.out" },
@@ -85,7 +87,7 @@ const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true }: Pr
       timeline.current = null;
       inView.current = false;
     };
-  }, [text]);
+  }, [text, startOpacity]);
 
   useEffect(() => {
     if (!play) {
