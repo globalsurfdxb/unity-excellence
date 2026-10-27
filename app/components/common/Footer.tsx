@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import { useLenis } from "lenis/react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,13 +21,18 @@ type Props = {
 const Footer = ({ data }: Props) => {
   const pathname = usePathname();
   const pressScale = usePressScale();
+  // top corners only round once the page has scrolled all the way down
+  const [atEnd, setAtEnd] = useState(false);
+  useLenis(({ scroll, limit }) => setAtEnd(scroll >= limit - 2));
   // the footer sits under the page, so its intro waits until it is actually uncovered
   const [introRef, introShown] = useUncovered<HTMLDivElement>();
   const [navRef, navShown] = useUncovered<HTMLElement>();
   const [socialsRef, socialsShown] = useUncovered<HTMLDivElement>();
 
   return (
-    <footer className="relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 rounded-t-[40px] pt-130 pb-60 min-[1900px]:pb-[66px]">
+    <footer
+      className={`relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 pt-130 pb-60 min-[1900px]:pb-[66px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${atEnd ? "rounded-t-[40px]" : "rounded-t-none"}`}
+    >
       <Image src={data.background} alt="" fill className="object-cover pointer-events-none" />
       <div className="container pointer-events-none absolute inset-x-0 top-0">
         <Image src={data.bgShape} alt="" width={542} height={333} className="pointer-events-none ml-auto block h-auto max-w-[36%] 3xl:max-w-[60%] opacity-60" />
@@ -121,10 +128,14 @@ const Footer = ({ data }: Props) => {
                 {...pressScale}
                 className="group relative isolate flex size-[48px] items-center justify-center overflow-hidden rounded-full border border-border-color/20"
               >
-                {/* drops in from the top on hover; twice the button's height so its curved bottom edge clears the button */}
+                {/* on hover one fill drops from the top and one rises from the bottom, meeting in the middle */}
                 <span
                   aria-hidden="true"
-                  className="absolute inset-x-0 top-0 -z-10 h-[200%] -translate-y-[101%] rounded-b-[30%] bg-white transition-transform duration-400 ease-linear group-hover:translate-y-0"
+                  className="absolute inset-x-0 top-0 -z-10 h-full translate-y-[-101%] rounded-b-[40%] transition-transform duration-200 ease-linear group-hover:translate-y-[-15%] bg-white"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-0 bottom-0 -z-10 h-full translate-y-[101%] rounded-t-[40%] transition-transform duration-200 ease-linear group-hover:translate-y-[15%] bg-white"
                 />
                 {/* icons are navy; shown white until hover */}
                 <Image
@@ -132,7 +143,7 @@ const Footer = ({ data }: Props) => {
                   alt=""
                   width={24}
                   height={24}
-                  className="pointer-events-none brightness-0 invert transition-[filter] duration-300 ease-linear group-hover:brightness-100 group-hover:invert-0"
+                  className="pointer-events-none brightness-0 invert transition-[filter] duration-200 ease-linear group-hover:brightness-100 group-hover:invert-0"
                 />
               </a>
             ))}
