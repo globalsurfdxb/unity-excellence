@@ -1,6 +1,6 @@
 export const heroData = {
   image: "/assets/images/home/hero/hero.jpg",
-  bgShape: "/assets/images/home/hero/hero-bg.svg",
+  bgShape: "/assets/images/home/hero/hero-bg-animated.svg",
   imageAlt: "hero-image",
   title: "Every community,\nExpertly managed",
   button: {
@@ -63,7 +63,7 @@ export const servicesData = {
   description:
     "We ensure common areas remain clean, safe, and well-maintained while upholding transparent",
   background: "/assets/images/home/services/service-bg.jpg",
-  bgShape: "/assets/images/home/services/service-bg-svg.svg",
+  bgShape: "/assets/images/home/services/service-bg-animated.svg",
   services: [
     {
       title: "Governance & Administration",

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { surveyData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
+import SectionTitle from "@/app/components/common/SectionTitle";
 
 type Props = {
   data: typeof surveyData;
@@ -15,7 +16,7 @@ const Survey = ({ data }: Props) => {
       </div>
 
       <div className="flex flex-col justify-center lg:-ml-[15px] bg-linear-[255.44deg] from-primary from-[56.21%] to-primary-light to-[154.81%] pl-20 py-100 text-white pr-30 lg:pl-120">
-        <h2 className="hero-title whitespace-pre-line">{data.title}</h2>
+        <SectionTitle text={data.title} className="hero-title" />
         <p className="text-description mt-20 max-w-[40ch] text-white/70">{data.description}</p>
         <CommonButton label={data.button.label} href={data.button.href} className="mt-40" />
       </div>

@@ -5,6 +5,7 @@ import "swiper/css";
 import { newsData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
 import NewsCard from "@/app/components/common/NewsCard";
+import SectionTitle from "@/app/components/common/SectionTitle";
 
 type Props = {
   data: typeof newsData;
@@ -15,7 +16,7 @@ const News = ({ data }: Props) => {
     <section className="py-130">
       <div className="container">
         <div className="flex items-center justify-between gap-20">
-          <h2 className="section-title">{data.title}</h2>
+          <SectionTitle text={data.title} className="section-title" />
           <CommonButton
             label={data.button.label}
             href={data.button.href}

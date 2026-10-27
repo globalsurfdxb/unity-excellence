@@ -7,7 +7,7 @@ import { useLenis } from "lenis/react";
 const HeroCover = () => {
   const [revealed, setRevealed] = useState(false);
 
-  useLenis(({ scroll }) => setRevealed(scroll > 30));
+  useLenis(({ scroll }) => setRevealed(scroll > 20));
 
   return (
     <div
