@@ -37,7 +37,6 @@ const News = ({ data }: Props) => {
           .to(card.querySelectorAll('[data-news="content"]'), { y: 0, opacity: 1, duration: 0.8, ease: "power3.out", stagger: 0.1, clearProps: "transform,opacity" }, at + 0.45);
       });
 
-      // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (!entry.isIntersecting) return;

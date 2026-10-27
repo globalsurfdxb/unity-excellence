@@ -29,7 +29,6 @@ export const useUncovered = <T extends HTMLElement>() => {
       cancelAnimationFrame(frame);
     };
 
-    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         onScroll();

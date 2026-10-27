@@ -34,7 +34,6 @@ const Survey = ({ data }: Props) => {
       if (!frame) frame = requestAnimationFrame(update);
     };
 
-    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         update();

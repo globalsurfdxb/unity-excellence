@@ -66,7 +66,6 @@ const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true, star
       observer.disconnect();
     };
 
-    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

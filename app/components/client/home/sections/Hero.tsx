@@ -27,7 +27,7 @@ const Hero = ({ data }: Props) => {
         data-intro="hero-shape"
         width={536}
         height={260}
-        className="absolute -bottom-0 right-150 h-auto max-w-[33%] 3xl:max-w-[50%]"
+        className="absolute -bottom-[3px] right-150 h-auto max-w-[33%] 3xl:max-w-[50%]"
       />
 
       <div className="container relative flex h-full flex-col justify-end pb-130">

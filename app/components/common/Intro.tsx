@@ -85,7 +85,7 @@ const Intro = () => {
         .to(pieces, { x: 0, y: 0, scale: 1, duration: 1.6, ease: "power2.inOut" }, 0.4)
         .to(mark, { rotation: 0, duration: 1.6, ease: "power2.inOut" }, 0.4)
         .to(letters, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out", stagger: (i) => letterDelays[i] }, 0.9)
-        .to('[data-intro="logo"]', { opacity: 0, duration: 0.6, ease: "power2.in" }, ">+0.4")
+        .to('[data-intro="logo"]', { opacity: 0, duration: 0.5, ease: "power2.in" }, ">+0.1")
         .addLabel("reveal")
         // let clicks and the hero title's on-screen check pass through while it fades
         .set(root, { pointerEvents: "none" }, "reveal")
