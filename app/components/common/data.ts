@@ -41,3 +41,17 @@ export const footerData = {
   ],
   copyright: "©2026 Unity Excellence. All Rights Reserved",
 };
+
+export const notFoundData = {
+  eyebrow: "Error 404",
+  title: "This page has moved on",
+  description: "The page you're looking for may have been moved, renamed or no longer exists. Let's get you back to your community.",
+  button: {
+    label: "Back to Home",
+    href: "/",
+  },
+  shapes: {
+    primary: "/assets/images/footer/footer-bg-animated.svg",
+    secondary: "/assets/images/home/hero/hero-bg-animated.svg",
+  },
+};

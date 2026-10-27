@@ -40,10 +40,15 @@ const Header = ({ data }: Props) => {
           {...pressScale}
           className="group relative isolate order-last flex size-[50px] cursor-pointer items-center justify-center justify-self-start overflow-hidden rounded-full border border-border-color md:order-none"
         >
-          {/* drops in from the top on hover, in the colour opposite the bar behind it */}
+          {/* on hover one fill drops from the top and one rises from the bottom, meeting in the middle,
+              in the colour opposite the bar behind it */}
           <span
             aria-hidden="true"
-            className={`absolute inset-x-0 top-0 -z-10 h-[200%] -translate-y-[101%] rounded-b-[30%] transition-transform duration-400 ease-linear group-hover:translate-y-0 ${solid ? "bg-primary" : "bg-white"}`}
+            className={`absolute inset-x-0 top-0 -z-10 h-full translate-y-[-101%] rounded-b-[40%] transition-transform duration-200 ease-linear group-hover:translate-y-[-15%] ${solid ? "bg-primary" : "bg-white"}`}
+          />
+          <span
+            aria-hidden="true"
+            className={`absolute inset-x-0 bottom-0 -z-10 h-full translate-y-[101%] rounded-t-[40%] transition-transform duration-200 ease-linear group-hover:translate-y-[15%] ${solid ? "bg-primary" : "bg-white"}`}
           />
           {/* icon is navy; white over the hero, and flips against the hover fill */}
           <Image
@@ -51,7 +56,7 @@ const Header = ({ data }: Props) => {
             alt=""
             width={20}
             height={15}
-            className={`pointer-events-none transition-[filter] duration-300 ease-linear ${solid ? "group-hover:brightness-0 group-hover:invert" : "brightness-0 invert group-hover:brightness-100 group-hover:invert-0"}`}
+            className={`pointer-events-none transition-[filter] duration-200 ease-linear ${solid ? "group-hover:brightness-0 group-hover:invert" : "brightness-0 invert group-hover:brightness-100 group-hover:invert-0"}`}
           />
         </button>
 
