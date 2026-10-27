@@ -30,7 +30,7 @@ const Highlights = ({ data }: Props) => {
   const total = data.slides.length;
 
   // only play while the section is actually on screen, so the video isn't downloaded on page load.
-  // in-viewport isn't enough: on load this section sits under the hero, so also check nothing covers it
+  // also checks nothing covers it, so it never plays hidden behind an overlay such as the intro
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
@@ -54,7 +54,6 @@ const Highlights = ({ data }: Props) => {
       if (!frame) frame = requestAnimationFrame(check);
     };
 
-    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         onScroll();

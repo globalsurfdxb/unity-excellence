@@ -22,14 +22,14 @@ const NewsCard = ({ image, title, category, date, href }: Props) => {
         {/* navy fill drops from the top with a curved edge that flattens as it lands */}
         <span
           aria-hidden
-          className="absolute -inset-x-[15%] top-0 -z-10 h-[130%] -translate-y-full rounded-[0_0_50%_50%/0_0_35%_35%] bg-primary transition-[translate,border-radius] duration-[600ms] ease-linear group-hover:translate-y-0 group-hover:rounded-none"
+          className="absolute -inset-x-[15%] top-0 -z-10 h-[130%] -translate-y-full rounded-[0_0_50%_50%/0_0_35%_35%] bg-primary transition-[translate,border-radius] duration-[400ms] ease-linear group-hover:translate-y-0 group-hover:rounded-none"
         />
-        <h3 data-news="content" className="text-subtitle transition-colors duration-500 group-hover:text-white group-hover:delay-100">{title}</h3>
+        <h3 data-news="content" className="text-subtitle transition-colors duration-300 group-hover:text-white group-hover:delay-75">{title}</h3>
         <div data-news="content" className="flex items-center justify-between gap-20 text-description-3">
-          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] text-secondary transition-colors duration-500 group-hover:border-white/40 group-hover:text-white group-hover:delay-300">
+          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] text-secondary transition-colors duration-300 group-hover:border-white/40 group-hover:text-white group-hover:delay-200">
             {category}
           </span>
-          <span className="text-secondary transition-colors duration-500 group-hover:text-white group-hover:delay-300">{date}</span>
+          <span className="text-secondary transition-colors duration-300 group-hover:text-white group-hover:delay-200">{date}</span>
         </div>
       </div>
     </Link>

@@ -59,15 +59,7 @@ const NotFoundView = () => {
         width={542}
         height={333}
         data-nf="shape"
-        className="pointer-events-none absolute top-0 right-0 -z-10 h-auto max-w-[60%] lg:max-w-[36%] opacity-60"
-      />
-      <Image
-        src={notFoundData.shapes.secondary}
-        alt=""
-        width={536}
-        height={260}
-        data-nf="shape"
-        className="pointer-events-none absolute -bottom-[3px] left-20 -z-10 h-auto max-w-[70%] lg:left-150 lg:w-[min(440px,30%)]"
+        className="pointer-events-none absolute top-0 right-0 -z-10 h-auto max-w-[60%] lg:max-w-[30%] 3xl:max-w-[36%] opacity-60"
       />
 
       <p data-nf="fade" className="text-description-2 tracking-[0.3em] uppercase text-white/60">

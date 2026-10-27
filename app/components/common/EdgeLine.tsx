@@ -44,7 +44,6 @@ const EdgeLine = ({ height = "h-[10px]", color = "border-primary/10", delay = 0,
       cancelAnimationFrame(frame);
     };
 
-    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         onScroll();
