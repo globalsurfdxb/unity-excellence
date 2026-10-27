@@ -1,0 +1,10 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.d{stroke-dasharray:1 2}
+.a{animation:a 5.6s 3.0s infinite}
+@keyframes a{0%{stroke-dashoffset:1.001;animation-timing-function:cubic-bezier(0.65,0,0.35,1)}16%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.d{animation:none!important}}
+</style>
+<path d="M46.6666 25.0002C40.3569 35.57 32.7653 40.9014 25.3353 40.9986C17.8244 41.0969 10.4745 35.8452 4.00049 25.0002C10.4578 14.1833 17.7743 8.88906 25.3353 9.00176C32.6978 9.11144 40.3043 14.3426 46.6666 25.0002Z" stroke-miterlimit="10" stroke="#152663"/>
+<path class="d a" pathLength="1" d="M30.6687 24.9999C30.6687 27.9453 28.281 30.3328 25.3359 30.3328C22.3907 30.3328 20.0031 27.9453 20.0031 24.9999C20.0031 22.0548 22.3907 19.6671 25.3359 19.6671C28.281 19.6671 30.6687 22.0548 30.6687 24.9999Z" stroke-miterlimit="10" stroke="#152663"/>
+</svg>

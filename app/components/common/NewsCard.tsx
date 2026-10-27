@@ -18,13 +18,18 @@ const NewsCard = ({ image, title, category, date, href }: Props) => {
         </div>
       </div>
 
-      <div className="flex min-h-[240px] flex-1 flex-col justify-between gap-40 bg-cream-background p-30 transition-colors duration-400 group-hover:bg-primary 3xl:min-h-[300px] rounded-t-[10px]">
-        <h3 data-news="content" className="text-subtitle transition-colors duration-400 group-hover:text-white">{title}</h3>
+      <div className="relative isolate flex min-h-[240px] flex-1 flex-col justify-between gap-40 overflow-hidden rounded-t-[10px] bg-cream-background p-30 3xl:min-h-[300px]">
+        {/* navy fill drops from the top with a curved edge that flattens as it lands */}
+        <span
+          aria-hidden
+          className="absolute -inset-x-[15%] top-0 -z-10 h-[130%] -translate-y-full rounded-[0_0_50%_50%/0_0_35%_35%] bg-primary transition-[translate,border-radius] duration-[600ms] ease-linear group-hover:translate-y-0 group-hover:rounded-none"
+        />
+        <h3 data-news="content" className="text-subtitle transition-colors duration-500 group-hover:text-white group-hover:delay-100">{title}</h3>
         <div data-news="content" className="flex items-center justify-between gap-20 text-description-3">
-          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] text-secondary transition-colors duration-400 group-hover:border-white/40 group-hover:text-white">
+          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] text-secondary transition-colors duration-500 group-hover:border-white/40 group-hover:text-white group-hover:delay-300">
             {category}
           </span>
-          <span className="text-secondary transition-colors duration-400 group-hover:text-white">{date}</span>
+          <span className="text-secondary transition-colors duration-500 group-hover:text-white group-hover:delay-300">{date}</span>
         </div>
       </div>
     </Link>

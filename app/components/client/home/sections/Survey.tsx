@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { surveyData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
@@ -8,10 +11,54 @@ type Props = {
 };
 
 const Survey = ({ data }: Props) => {
+  const mediaRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
+
+  // image drifts against the scroll inside its clipped frame
+  useEffect(() => {
+    const media = mediaRef.current;
+    const layer = parallaxRef.current;
+    if (!media || !layer || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const rect = media.getBoundingClientRect();
+      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+      const clamped = Math.min(Math.max(progress, 0), 1);
+      layer.style.transform = `translate3d(0, ${(clamped - 0.5) * 2 * 6}%, 0)`;
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+
+    // IntersectionObserver rather than ScrollTrigger: the home sections sit in a sticky wrapper
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        update();
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", onScroll);
+      } else {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", onScroll);
+      }
+    });
+    observer.observe(media);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      cancelAnimationFrame(frame);
+    };
+  }, []);
+
   return (
     <section className="grid lg:min-h-[calc(50vw*668/960)] lg:grid-cols-2">
-      <div className="relative z-10 aspect-[960/668] overflow-hidden lg:aspect-auto lg:rounded-r-[10px]">
-        <Image src={data.image} alt={data.imageAlt} fill className="object-cover" />
+      <div ref={mediaRef} className="relative isolate z-10 aspect-[960/668] overflow-hidden lg:aspect-auto lg:rounded-r-[10px]">
+        <div ref={parallaxRef} className="absolute inset-x-0 -top-[8%] h-[116%] will-change-transform">
+          <Image src={data.image} alt={data.imageAlt} fill className="object-cover" />
+        </div>
         <div className="absolute inset-0 bg-linear-[238.59deg] from-primary/0 from-[22.02%] to-primary/60 to-100%" />
       </div>
 

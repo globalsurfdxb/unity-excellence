@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { excellenceData } from "../data";
 import SectionTitle from "@/app/components/common/SectionTitle";
+import EdgeLine from "@/app/components/common/EdgeLine";
 
 type Props = {
   data: typeof excellenceData;
@@ -18,9 +19,9 @@ const Excellence = ({ data }: Props) => {
         </div>
 
         <ul className="grid gap-x-30 sm:grid-cols-2">
-          {data.features.map((feature) => (
+          {data.features.map((feature, i) => (
             <li key={feature.title} className="min-[1900px]:min-w-[408px]">
-              <span className="block h-[10px] rounded-t-[10px] border-t border-primary/10" />
+              <EdgeLine delay={i * 0.12} />
               <div className="flex items-center gap-30 pt-30 pb-60 pr-50">
                 <Image
                   src={feature.icon}
