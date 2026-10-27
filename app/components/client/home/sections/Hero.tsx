@@ -24,6 +24,7 @@ const Hero = ({ data }: Props) => {
       <Image
         src={data.bgShape}
         alt=""
+        data-intro="hero-shape"
         width={536}
         height={260}
         className="absolute -bottom-[3px] right-150 h-auto max-w-[50%]"

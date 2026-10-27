@@ -5,6 +5,8 @@ import Image from "next/image";
 import gsap from "gsap";
 import { servicesData } from "../data";
 import SectionTitle from "@/app/components/common/SectionTitle";
+import { moveUp } from "@/app/components/common/motionVariants";
+import { motion } from "motion/react";
 
 type Props = {
   data: typeof servicesData;
@@ -106,7 +108,14 @@ const Services = ({ data }: Props) => {
             />
             <div className="relative">
               <SectionTitle text={data.title} className="section-title text-white" />
-              <p className="text-description mt-20 max-w-[35ch] text-white/70">{data.description}</p>
+              <motion.p
+                initial="hidden"
+                whileInView="show"
+                variants={moveUp(0.07)}
+                className="text-description mt-20 max-w-[35ch] text-white/70"
+              >
+                {data.description}
+              </motion.p>
             </div>
 
             <ul className="relative flex flex-col gap-30">

@@ -73,6 +73,7 @@ const Intro = () => {
       }, 0);
 
       const hero = document.querySelector('[data-intro="hero"]');
+      const heroShape = document.querySelector('[data-intro="hero-shape"]');
       const headerLogo = document.querySelector('[data-intro="header-logo"]');
       // the header's two ends slide in from their own side
       // queried from the document: selectors inside this context are scoped to the overlay
@@ -94,18 +95,23 @@ const Intro = () => {
       // header and hero are only touched from the reveal on, behind the still-opaque overlay:
       // styling them at mount would race hydration and trip a server/client mismatch
       if (hero) tl.fromTo(hero, { scale: 1.12 }, { scale: 1, duration: 1.6, ease: "power3.out", immediateRender: false, clearProps: "transform" }, "reveal");
+      if (heroShape) {
+        tl.set(heroShape, { opacity: 0, y: 60 }, "reveal")
+          .to(heroShape, { opacity: 1, y: 0, duration: 1.4, ease: "power3.out", clearProps: "opacity,transform" }, "reveal+=0.3");
+      }
       if (headerLogo) {
         tl.set(headerLogo, { opacity: 0, y: -16 }, "reveal")
           .to(headerLogo, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", clearProps: "opacity,transform" }, "reveal+=0.35");
       }
       if (ends.length) {
         tl.set(ends, { opacity: 0, x: (_, el: HTMLElement) => (el.getBoundingClientRect().left < window.innerWidth / 2 ? -30 : 30) }, "reveal")
-          .to(ends, { opacity: 1, x: 0, duration: 0.9, ease: "power3.out", clearProps: "opacity,transform" }, "reveal+=0.7");
+          .to(ends, { x: 0, duration: 1.4, ease: "elastic.out(1.1, 0.6)", clearProps: "transform" }, "reveal+=0.7")
+          .to(ends, { opacity: 1, duration: 0.4, ease: "power2.out", clearProps: "opacity" }, "reveal+=0.7");
       }
       tl.call(cueIntro, [], "reveal+=1");
       if (heroButton) {
         tl.set(heroButton, { opacity: 0, y: 50 }, "reveal")
-          .to(heroButton, { y: 0, duration: 1.5, ease: "elastic.out(1, 0.75)", clearProps: "transform" }, "reveal+=1.3")
+          .to(heroButton, { y: 0, duration: 1.4, ease: "elastic.out(1.1, 0.6)", clearProps: "transform" }, "reveal+=1.3")
           .to(heroButton, { opacity: 1, duration: 0.4, ease: "power2.out", clearProps: "opacity" }, "reveal+=1.3");
       }
     }, root);
