@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { footerData } from "./data";
 import CommonButton from "./CommonButton";
 import SectionTitle from "./SectionTitle";
+import EdgeLine from "./EdgeLine";
 import { usePressScale } from "./usePressScale";
 
 type Props = {
@@ -42,7 +43,7 @@ const Footer = ({ data }: Props) => {
           </div>
 
           {/* row 2 */}
-          <span className="block h-2.5 3xl:h-3.75 rounded-t-[10px] border-t border-white/20 lg:col-span-3" />
+          <EdgeLine height="h-2.5 3xl:h-3.75" color="border-white/20" direction="center" className="lg:col-span-3" />
 
           {/* row 3 */}
           <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[110px] 3xl:w-[116px]" />

@@ -1,0 +1,20 @@
+<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.d{stroke-dasharray:1 2}
+.a{animation:a 6.2s 4.2s infinite}
+@keyframes a{0%{stroke-dashoffset:1.001;animation-timing-function:cubic-bezier(0.65,0,0.35,1)}14%,100%{stroke-dashoffset:0}}
+.b{animation:b 6.2s 4.2s infinite}
+@keyframes b{0%,12%{stroke-dashoffset:1.001}12%{animation-timing-function:cubic-bezier(0.65,0,0.35,1)}24%,100%{stroke-dashoffset:0}}
+.c{animation:c 6.2s 4.2s infinite}
+@keyframes c{0%,22%{stroke-dashoffset:1.001}22%{animation-timing-function:cubic-bezier(0.65,0,0.35,1)}33%,100%{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.d{animation:none!important}}
+</style>
+<path d="M42.9283 25.3698C43.0004 34.9935 35.2575 42.8535 25.6338 42.9257C16.0102 42.9979 8.15013 35.2549 8.07795 25.6312C8.00578 16.0076 15.7488 8.14754 25.3724 8.07537C34.9961 8.00319 42.8561 15.7462 42.9283 25.3698Z" stroke-width="1.00003" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d c" pathLength="1" d="M29.28 31.959C31.8939 33.3302 33.6877 36.0733 33.6877 39.215V40.2326" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d c" pathLength="1" d="M21.5688 32.0415C19.0384 33.4382 17.3143 36.1349 17.3143 39.215V40.2326" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d b" pathLength="1" d="M32.1094 26.2151C32.1094 29.8648 29.1507 32.8235 25.501 32.8235C21.8513 32.8235 18.8926 29.8648 18.8926 26.2151C18.8926 22.5654 21.8513 19.6067 25.501 19.6067C29.1507 19.6067 32.1094 22.5654 32.1094 26.2151Z" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d a" pathLength="1" d="M0.5 25.4999H7.38437" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d a" pathLength="1" d="M50.5 25.4999H43.6156" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d a" pathLength="1" d="M25.5001 50.5V43.6156" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+<path class="d a" pathLength="1" d="M25.5001 0.5V7.38437" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" stroke="#152663"/>
+</svg>
