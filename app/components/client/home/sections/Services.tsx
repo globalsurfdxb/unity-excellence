@@ -5,7 +5,6 @@ import Image from "next/image";
 import gsap from "gsap";
 import { servicesData } from "../data";
 import SectionTitle from "@/app/components/common/SectionTitle";
-import { useParallax } from "@/app/components/common/useParallax";
 import { moveUp } from "@/app/components/common/motionVariants";
 import { motion } from "motion/react";
 
@@ -26,10 +25,6 @@ const Services = ({ data }: Props) => {
   const [active, setActive] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  const mediaRef = useRef<HTMLDivElement>(null);
-  const parallaxRef = useRef<HTMLDivElement>(null);
-  // the service images drift against the scroll inside their rounded frame, as in Survey
-  useParallax(mediaRef, parallaxRef);
   const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
   const shownRef = useRef(0);
 
@@ -144,8 +139,8 @@ const Services = ({ data }: Props) => {
         <div ref={cardRef} className="relative flex flex-col overflow-hidden rounded-(--radius,10px) lg:aspect-[2] lg:flex-row 2xl:aspect-[2.15] 3xl:h-[801px]">
           <Image src={data.background} alt="" fill className="object-cover" />
 
-          <div ref={mediaRef} className="relative aspect-[4/3] overflow-hidden rounded-(--radius,10px) lg:aspect-auto lg:w-[48.84%]">
-            <div ref={parallaxRef} className="absolute inset-x-0 -top-[8%] h-[116%] will-change-transform">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-(--radius,10px) lg:aspect-auto lg:w-[48.84%]">
+            <div className="absolute inset-0">
               {data.services.map((service, i) => (
                 <Image
                   key={service.title}
