@@ -10,7 +10,7 @@
   --breakpoint-3xl: 1601px;
 }
 
-
+/* Regular Font */
 @font-face {
   font-family: "Neue Montreal Regular";
   src: url("/assets/fonts/neuemontreal-regular.otf") format("opentype");
@@ -18,6 +18,7 @@
   font-display: swap;
 }
 
+/* Medium Font */
 @font-face {
   font-family: "Neue Montreal Medium";
   src: url("/assets/fonts/neuemontreal-medium.otf") format("opentype");
@@ -25,6 +26,7 @@
   font-display: swap;
 }
 
+/* Bold Font */
 @font-face {
   font-family: "Neue Montreal Bold";
   src: url("/assets/fonts/neuemontreal-bold.otf") format("opentype");
@@ -123,8 +125,8 @@ input:-webkit-autofill:active {
 /* 150px → 80px at 420px, 150px at 1920px */
 --space-150: clamp(80px, 80px + (100vw - 420px) * 70 / 1500, 150px);
 
-/* 130px → 70px at 420px, 130px at 1920px */
---space-130: clamp(70px, 70px + (100vw - 420px) * 60 / 1500, 130px);
+/* 130 spacing → 70px at 420px, rising to 110px (reached ~1440px), then on 3xl screens 110px at 1601px up to 120px at 1920px */
+--space-130: clamp(70px, min(70px + (100vw - 420px) * 60 / 1500, 110px + max(0px, (100vw - 1601px) * 10 / 319)), 120px);
 
 /* 120px → 65px at 420px, 120px at 1920px */
 --space-120: clamp(65px, 65px + (100vw - 420px) * 55 / 1500, 120px);

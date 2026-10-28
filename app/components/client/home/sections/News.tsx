@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,6 +15,8 @@ type Props = {
 
 const News = ({ data }: Props) => {
   const listRef = useRef<HTMLDivElement>(null);
+  // whether the cards overflow and the slider can be dragged; Swiper locks it where they all fit
+  const [draggable, setDraggable] = useState(false);
 
   // cards rise in one after another: the image wipes up while zooming out, then the text follows
   useLayoutEffect(() => {
@@ -111,12 +113,20 @@ const News = ({ data }: Props) => {
         </div>
 
         <div ref={listRef} className="mt-50">
+          {/* a grab cursor only where the cards overflow and can be dragged; where they all fit, the cards keep their link pointer.
+              The cards are links, so the cursor is set on them too */}
           <Swiper
+            grabCursor
+            onSwiper={(swiper) => setDraggable(!swiper.isLocked)}
+            onLock={() => setDraggable(false)}
+            onUnlock={() => setDraggable(true)}
+            className={draggable ? "[&_a]:cursor-grab [&_a:active]:cursor-grabbing" : ""}
             slidesPerView={1.2}
             speed={800}
             spaceBetween={20}
             breakpoints={{
               640: { slidesPerView: 2 },
+              950: { slidesPerView: 3, spaceBetween: 15 },
               1024: { slidesPerView: 3, spaceBetween: 24 },
               1280: { slidesPerView: 4, spaceBetween: 30 },
               1780: { slidesPerView: 4, spaceBetween: 32 },

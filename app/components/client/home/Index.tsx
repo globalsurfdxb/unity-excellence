@@ -7,8 +7,6 @@ import Survey from "./sections/Survey";
 import News from "./sections/News";
 import { heroData, aboutData, highlightsData, servicesData, excellenceData, surveyData, newsData } from "./data";
 
-// card scroll: About waits pinned at the bottom of the screen under the hero, which slides up off it like a card;
-// once the hero has cleared About the page scrolls on normally
 const Index = () => {
   return (
     <>
