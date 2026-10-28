@@ -78,22 +78,22 @@ export const servicesData = {
     {
       title: "Financial Management & Reporting",
       description: "Keeping common areas welcoming and systems reliable.",
-      image: "/assets/images/home/services/list/1.jpg",
+      image: "/assets/images/home/hero/hero.jpg", // dummy until the real service images arrive
     },
     {
       title: "Facilities & Maintenance",
       description: "Keeping common areas welcoming and systems reliable.",
-      image: "/assets/images/home/services/list/1.jpg",
+      image: "/assets/images/home/survey/survey-left.jpg",
     },
     {
       title: "Security & Safety Management",
       description: "Keeping common areas welcoming and systems reliable.",
-      image: "/assets/images/home/services/list/1.jpg",
+      image: "/assets/videos/home/highlights/1-thumb.png",
     },
     {
       title: "Technology & Smart Management Solutions",
       description: "Keeping common areas welcoming and systems reliable.",
-      image: "/assets/images/home/services/list/1.jpg",
+      image: "/assets/images/home/hero/hero.jpg",
     },
   ],
 };

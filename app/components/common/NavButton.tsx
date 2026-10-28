@@ -12,7 +12,7 @@ const NavButton = ({ direction, onClick, disabled = false, className = "" }: Pro
       aria-label={direction === "prev" ? "Previous" : "Next"}
       onClick={onClick}
       disabled={disabled}
-      className={`group relative isolate flex size-[50px] items-center justify-center overflow-hidden rounded-full border border-border-color cursor-pointer transition-[opacity,scale] duration-400 disabled:cursor-not-allowed disabled:opacity-40 ${disabled ? "" : "active:scale-95"} ${className}`}
+      className={`group relative isolate flex size-(--btn-size) items-center justify-center overflow-hidden rounded-full border border-border-color cursor-pointer transition-[opacity,scale] duration-400 disabled:cursor-not-allowed disabled:opacity-40 ${disabled ? "" : "active:scale-95"} ${className}`}
     >
       {/* on hover one fill drops from the top and one rises from the bottom, meeting in the middle */}
       <span

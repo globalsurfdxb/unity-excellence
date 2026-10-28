@@ -18,6 +18,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: url("/assets/fonts/neuemontreal-medium.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url("/assets/fonts/neuemontreal-bold.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
 /* scrollbar hide */
 ::-webkit-scrollbar {
   display: none;
@@ -138,6 +152,19 @@ input:-webkit-autofill:active {
 
 /* 20px → 14px at 420px, 20px at 1920px */
 --space-20: clamp(14px, 14px + (100vw - 420px) * 6 / 1500, 20px);
+
+/* buttons: one height for all (text buttons, menu, slider arrows) — 50px from 3xl (1601px) up, easing down to 36px at 1024px;
+   text buttons take their side padding from --btn-px, 20px down to 12px over the same range */
+--btn-size: clamp(36px, 36px + (100vw - 1024px) * 14 / 577, 50px);
+--btn-px: clamp(12px, 12px + (100vw - 1024px) * 8 / 577, 20px);
+
+/* below 1280px some sizes run smaller, after the tokens above so they take over:
+   text-26 → 18px at 420px, 22px at 1280px; text-18 → 15px at 420px, 16.5px at 1280px; space-30 → 16px at 420px, 22px at 1280px */
+@media (max-width: 1279.98px) {
+  --text-26: clamp(18px, 18px + (100vw - 420px) * 4 / 860, 22px);
+  --text-18: clamp(15px, 15px + (100vw - 420px) * 1.5 / 860, 16.5px);
+  --space-30: clamp(16px, 16px + (100vw - 420px) * 6 / 860, 22px);
+}
 }
 
 
@@ -151,7 +178,8 @@ input:-webkit-autofill:active {
   --color-description-color: var(--description-color);
 
   --font-neue-montreal: "Neue Montreal Regular", serif;
-
+  --font-neue-montreal-medium: "Neue Montreal Medium", serif;
+  --font-neue-montreal-bold: "Neue Montreal Bold", serif;
 
   --text-80: var(--text-80);
   --text-50: var(--text-50);

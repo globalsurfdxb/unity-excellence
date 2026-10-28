@@ -12,7 +12,7 @@ type Props = {
 const NewsCard = ({ image, title, category, date, href }: Props) => {
   return (
     <Link href={href} data-news="card" className="group flex h-full flex-col overflow-hidden rounded-[10px]">
-      <div data-news="media" className="relative aspect-[407/234] overflow-hidden rounded-b-[10px] [clip-path:inset(var(--clip,0%)_0_0_0)]">
+      <div data-news="media" className="relative aspect-[407/234] min-[1900px]:min-h-[234px] overflow-hidden rounded-b-[10px] [clip-path:inset(var(--clip,0%)_0_0_0)]">
         <div data-news="zoom" className="absolute inset-0">
           <Image src={image} alt={title} fill className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105" />
         </div>

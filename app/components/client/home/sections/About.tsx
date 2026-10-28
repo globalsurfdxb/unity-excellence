@@ -20,6 +20,8 @@ type ParallaxImageProps = {
 // screens of scroll over which an image travels from +offset to -offset
 const TRAVEL = 2.25;
 const BLUR = 8;
+// screens of scroll by which the images are fully sharp, well before the hero has gone
+const SHARPEN = 0.6;
 
 // also runs during server render, where there is no window
 const screenHeight = () => (typeof window === "undefined" ? 1 : window.innerHeight);
@@ -33,7 +35,7 @@ const ParallaxImage = ({ src, alt, offset, fade = false }: ParallaxImageProps) =
     return offset * (1 - 2 * progress);
   });
   // sharpens while the hero scrolls away
-  const blurAmount = useTransform(scrollY, (v) => BLUR * (1 - Math.min(v / screenHeight(), 1)));
+  const blurAmount = useTransform(scrollY, (v) => BLUR * (1 - Math.min(v / (screenHeight() * SHARPEN), 1)));
   const filter = useMotionTemplate`blur(${blurAmount}px)`;
 
   return (
@@ -69,6 +71,9 @@ const About = ({ data }: Props) => {
   const textRef = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
   const { scrollY } = useScroll();
+  // the lower images start below their spot and would peek into the strip under the hero at the top of the page;
+  // that strip stays white and opens up as the hero lifts
+  const clipPath = useTransform(scrollY, (v) => `inset(0 0 ${Math.max(HERO_GAP - v, 0)}px 0)`);
 
   // the text sits under the hero curtain, so "in view" fires too early;
   // wait until the hero's bottom edge has passed the middle of the text
@@ -86,7 +91,7 @@ const About = ({ data }: Props) => {
   return (
     // pinned to the bottom of the screen while the hero scrolls up over it, then scrolls on with the page once fully uncovered;
     // only on screens tall enough to show the whole section, so none of it is cut off while pinned
-    <section className="py-130 [@media(min-height:700px)]:sticky [@media(min-height:700px)]:bottom-0">
+    <motion.section style={{ clipPath }} className="py-130 [@media(min-height:700px)]:sticky [@media(min-height:700px)]:bottom-0">
       <div className="container relative">
         <div className="relative">
           <div className="flex justify-between px-80">
@@ -117,7 +122,7 @@ const About = ({ data }: Props) => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
