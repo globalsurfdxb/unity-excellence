@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { heroData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
-import HeroTitle from "../HeroTitle";
+import HeroTitleV2 from "../HeroTitleV2";
 
 type Props = {
   data: typeof heroData;
@@ -31,7 +31,7 @@ const HeroV2 = ({ data }: Props) => {
       />
 
       <div className="container relative flex h-full flex-col justify-end pb-130">
-        <HeroTitle text={data.title} className="hero-title text-white mb-30" />
+        <HeroTitleV2 text={data.title} className="hero-title text-white mb-30" />
         <div data-intro="hero-button" className="w-fit">
           <CommonButton label={data.button.label} href={data.button.href} />
         </div>

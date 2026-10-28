@@ -1,21 +1,21 @@
 <svg width="542" height="333" viewBox="0 0 542 333" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
 .edge{fill:none;stroke-linecap:round;animation:6s linear infinite}
-.t0{stroke:#FFFFFF;stroke-opacity:0.175;stroke-width:2.0;stroke-dasharray:1.5 98.5;animation-name:r0}
+.t0{stroke:#FFFFFF;stroke-opacity:0.1137;stroke-width:2.0;stroke-dasharray:1.5 98.5;animation-name:r0}
 @keyframes r0{from{stroke-dashoffset:1.5}to{stroke-dashoffset:-98.5}}
-.t1{stroke:#EEF2FC;stroke-opacity:0.1521;stroke-width:1.83;stroke-dasharray:3.61 96.39;animation-name:r1}
+.t1{stroke:#EEF2FC;stroke-opacity:0.09887;stroke-width:1.83;stroke-dasharray:3.61 96.39;animation-name:r1}
 @keyframes r1{from{stroke-dashoffset:3.61}to{stroke-dashoffset:-96.39}}
-.t2{stroke:#DEE6F8;stroke-opacity:0.1293;stroke-width:1.66;stroke-dasharray:6.7 93.3;animation-name:r2}
+.t2{stroke:#DEE6F8;stroke-opacity:0.08405;stroke-width:1.66;stroke-dasharray:6.7 93.3;animation-name:r2}
 @keyframes r2{from{stroke-dashoffset:6.7}to{stroke-dashoffset:-93.3}}
-.t3{stroke:#CDD9F5;stroke-opacity:0.1064;stroke-width:1.49;stroke-dasharray:10.31 89.69;animation-name:r3}
+.t3{stroke:#CDD9F5;stroke-opacity:0.06916;stroke-width:1.49;stroke-dasharray:10.31 89.69;animation-name:r3}
 @keyframes r3{from{stroke-dashoffset:10.31}to{stroke-dashoffset:-89.69}}
-.t4{stroke:#BDCCF2;stroke-opacity:0.0836;stroke-width:1.31;stroke-dasharray:14.3 85.7;animation-name:r4}
+.t4{stroke:#BDCCF2;stroke-opacity:0.05434;stroke-width:1.31;stroke-dasharray:14.3 85.7;animation-name:r4}
 @keyframes r4{from{stroke-dashoffset:14.3}to{stroke-dashoffset:-85.7}}
-.t5{stroke:#ACBFEF;stroke-opacity:0.0607;stroke-width:1.14;stroke-dasharray:18.61 81.39;animation-name:r5}
+.t5{stroke:#ACBFEF;stroke-opacity:0.03945;stroke-width:1.14;stroke-dasharray:18.61 81.39;animation-name:r5}
 @keyframes r5{from{stroke-dashoffset:18.61}to{stroke-dashoffset:-81.39}}
-.t6{stroke:#9CB3EB;stroke-opacity:0.0379;stroke-width:0.97;stroke-dasharray:23.19 76.81;animation-name:r6}
+.t6{stroke:#9CB3EB;stroke-opacity:0.02464;stroke-width:0.97;stroke-dasharray:23.19 76.81;animation-name:r6}
 @keyframes r6{from{stroke-dashoffset:23.19}to{stroke-dashoffset:-76.81}}
-.t7{stroke:#8BA6E8;stroke-opacity:0.015;stroke-width:0.8;stroke-dasharray:28.0 72.0;animation-name:r7}
+.t7{stroke:#8BA6E8;stroke-opacity:0.00975;stroke-width:0.8;stroke-dasharray:28.0 72.0;animation-name:r7}
 @keyframes r7{from{stroke-dashoffset:28.0}to{stroke-dashoffset:-72.0}}
 @media (prefers-reduced-motion:reduce){.edge{animation:none;stroke-opacity:0}}
 </style>
