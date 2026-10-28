@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type RefObject } from "react";
 import Image from "next/image";
 import { motion, useMotionTemplate, useMotionValueEvent, useScroll, useTransform } from "motion/react";
 import { aboutData } from "../data";
@@ -14,24 +14,25 @@ type ParallaxImageProps = {
   src: string;
   alt: string;
   offset: number;
+  // the image grid: every image times its drift and focus from it, so all four move in step
+  target: RefObject<HTMLDivElement | null>;
   fade?: boolean;
 };
 
 const BLUR = 8;
 
-const ParallaxImage = ({ src, alt, offset, fade = false }: ParallaxImageProps) => {
-  const ref = useRef<HTMLDivElement>(null);
-  // drifts from +offset to -offset for as long as the image is on screen
-  const { scrollYProgress: pass } = useScroll({ target: ref, offset: ["start end", "end start"] });
+const ParallaxImage = ({ src, alt, offset, target, fade = false }: ParallaxImageProps) => {
+  // drifts from +offset to -offset for as long as the grid is on screen
+  const { scrollYProgress: pass } = useScroll({ target, offset: ["start end", "end start"] });
   const y = useTransform(pass, [0, 1], [offset, -offset]);
-  // blurred and faded as it enters, fully clear once it reaches the middle of the screen
-  const { scrollYProgress: focus } = useScroll({ target: ref, offset: ["start end", "center center"] });
+  // blurred and faded as it enters, fully clear once the grid reaches the middle of the screen
+  const { scrollYProgress: focus } = useScroll({ target, offset: ["start end", "center center"] });
   const blurAmount = useTransform(focus, [0, 1], [BLUR, 0]);
   const filter = useMotionTemplate`blur(${blurAmount}px)`;
   const fadeOpacity = useTransform(focus, [0, 1], [0.7, 0]);
 
   return (
-    <motion.div ref={ref} style={{ y, filter }} className="relative size-[100px] overflow-hidden rounded-[10px] will-change-transform xl:size-150">
+    <motion.div style={{ y, filter }} className="relative size-[100px] overflow-hidden rounded-[10px] will-change-transform xl:size-150">
       <Image src={src} alt={alt} fill sizes="150px" className="object-cover" />
       {/* fade moves with the image */}
       {fade && <motion.div style={{ opacity: fadeOpacity }} className="absolute inset-x-0 bottom-0 h-[85%] bg-linear-to-b from-background/0 to-background" />}
@@ -39,8 +40,9 @@ const ParallaxImage = ({ src, alt, offset, fade = false }: ParallaxImageProps) =
   );
 };
 
-// starting offset (px) per image: top-left, top-right, bottom-left, bottom-right
-const OFFSETS = [90, 140, 120, 70];
+// starting offset (px) per image: top-left, top-right, bottom-left, bottom-right;
+// each bottom image drifts 30px more than the one above it, so the gap between them stays the same on both sides
+const OFFSETS = [90, 130, 120, 160];
 
 // text rises in from below, top-down: title, then description, then button
 const RISE = 40;
@@ -56,6 +58,7 @@ const reveal = (shown: boolean, delay: number, transition: typeof ELASTIC | type
 
 const About = ({ data }: Props) => {
   const [topRow, bottomRow] = [data.images.slice(0, 2), data.images.slice(2, 4)];
+  const gridRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
   const { scrollY } = useScroll();
@@ -73,15 +76,15 @@ const About = ({ data }: Props) => {
   return (
     <section className="py-130">
       <div className="container relative">
-        <div className="relative">
+        <div ref={gridRef} className="relative">
           <div className="flex justify-between px-80">
             {topRow.map((image, i) => (
-              <ParallaxImage key={image.src} src={image.src} alt={image.alt} offset={OFFSETS[i]} />
+              <ParallaxImage key={image.src} src={image.src} alt={image.alt} offset={OFFSETS[i]} target={gridRef} />
             ))}
           </div>
           <div className="mt-60 flex justify-between">
             {bottomRow.map((image, i) => (
-              <ParallaxImage key={image.src} src={image.src} alt={image.alt} offset={OFFSETS[i + 2]} fade />
+              <ParallaxImage key={image.src} src={image.src} alt={image.alt} offset={OFFSETS[i + 2]} target={gridRef} fade />
             ))}
           </div>
         </div>

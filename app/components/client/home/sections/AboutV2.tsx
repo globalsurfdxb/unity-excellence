@@ -45,10 +45,9 @@ const ParallaxImage = ({ src, alt, offset, fade = false }: ParallaxImageProps) =
   );
 };
 
-// starting offset (px) per image: top-left, top-right, bottom-left, bottom-right
-const OFFSETS = [90, 140, 120, 70];
-// for the extra row above: top-left, top-centre, top-right
-const EXTRA_OFFSETS = [60, 85, 110];
+// starting offset (px) per image: top-left, top-right, bottom-left, bottom-right;
+// each bottom image drifts 30px more than the one above it, so the gap between them stays the same on both sides
+const OFFSETS = [90, 130, 120, 160];
 
 // text drops in from above, bottom-up: button, then description, then title
 const DROP = -40;
@@ -84,20 +83,12 @@ const AboutV2 = ({ data }: Props) => {
   // covers a reload that restores the page mid-scroll
   useEffect(() => check(scrollY.get()), []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // a full screen tall, so it fills the view under the hero curtain on its own
   return (
-    <section className="flex min-h-svh flex-col justify-center py-130">
+    // pinned to the bottom of the screen while the hero scrolls up over it, then scrolls on with the page once fully uncovered;
+    // only on screens tall enough to show the whole section, so none of it is cut off while pinned
+    <section className="py-130 [@media(min-height:700px)]:sticky [@media(min-height:700px)]:bottom-0">
       <div className="container relative">
         <div className="relative">
-          {/* extra row, set further in than the row below so the images arc around the text, with one above it at the centre */}
-          <div className="mb-60 flex justify-between px-[calc(var(--spacing-150)*1.5)]">
-            {data.extraImages.map((image, i) => (
-              // the centre one sits higher than its neighbours, completing the arc
-              <div key={image.src} className={i === 1 ? "relative -top-100" : undefined}>
-                <ParallaxImage src={image.src} alt={image.alt} offset={EXTRA_OFFSETS[i]} />
-              </div>
-            ))}
-          </div>
           <div className="flex justify-between px-80">
             {topRow.map((image, i) => (
               <ParallaxImage key={image.src} src={image.src} alt={image.alt} offset={OFFSETS[i]} />
@@ -110,7 +101,7 @@ const AboutV2 = ({ data }: Props) => {
           </div>
         </div>
 
-        <div ref={textRef} className="mt-60 flex flex-col items-center text-center lg:absolute lg:inset-0 lg:mt-0 lg:justify-center lg:pt-150">
+        <div ref={textRef} className="mt-60 flex flex-col items-center text-center lg:absolute lg:inset-0 lg:mt-0">
           <motion.h2 {...reveal(shown, 0.4, TITLE_ELASTIC)} className="section-title max-w-[30ch] bg-linear-[var(--gradient-angle)] from-primary from-[21.05%] to-primary-light to-[84.98%] animate-gradient-wave bg-clip-text text-transparent">
             {data.title}
           </motion.h2>

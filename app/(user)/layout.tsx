@@ -19,7 +19,11 @@ export default function RootLayout({
     <div className={`relative h-full antialiased`}>
       <Intro />
       <Header data={headerData} />
-      <div className="relative z-10 flex min-h-full flex-col bg-background">{children}</div>
+      <div className="relative z-10 flex min-h-full flex-col bg-background">
+        {children}
+        {/* marks the end of the content, so the footer underneath knows when it starts to show */}
+        <span data-page-end aria-hidden="true" />
+      </div>
       <Footer data={footerData} />
     </div>
   );

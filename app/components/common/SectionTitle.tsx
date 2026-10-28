@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, type ElementType } from "react";
 import gsap from "gsap";
+import { isFooterRevealing, onFooterReveal } from "./footerReveal";
 
 type Props = {
   text: string;
@@ -56,8 +57,11 @@ const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true, star
       });
     }, root);
 
+    // in the footer, skip the measuring until the content starts to uncover it
+    const inFooter = !!root.closest("footer");
     const uncovered = () => {
       if (!inView.current) {
+        if (inFooter && !isFooterRevealing()) return;
         if (!isUncovered(root)) return;
         inView.current = true;
         start();
@@ -78,8 +82,10 @@ const SectionTitle = ({ text, className = "", tag: Tag = "h2", play = true, star
       { rootMargin: "0px 0px -15% 0px" },
     );
     observer.observe(root);
+    const offReveal = inFooter ? onFooterReveal(uncovered) : undefined;
 
     return () => {
+      offReveal?.();
       window.removeEventListener("scroll", uncovered);
       observer.disconnect();
       ctx.revert();

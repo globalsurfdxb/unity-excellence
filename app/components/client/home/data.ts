@@ -23,12 +23,6 @@ export const aboutData = {
     { src: "/assets/images/home/about/3.jpg", alt: "Security monitoring" },
     { src: "/assets/images/home/about/4.jpg", alt: "Property management team" },
   ],
-  // extra row above the others (left, centre, right), used by AboutV2 only
-  extraImages: [
-    { src: "/assets/images/home/services/list/1.jpg", alt: "Maintenance team at work" },
-    { src: "/assets/images/home/news/4.jpg", alt: "Looking out over a bright open space" },
-    { src: "/assets/images/home/news/3.jpg", alt: "Resident facilities support" },
-  ],
 };
 
 export const highlightsData = {

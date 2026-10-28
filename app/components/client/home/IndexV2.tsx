@@ -7,22 +7,18 @@ import Survey from "./sections/Survey";
 import News from "./sections/News";
 import { heroData, aboutData, highlightsData, servicesData, excellenceData, surveyData, newsData } from "./data";
 
-// card scroll: the hero lifts off like a card over the rest of the page, pinned underneath it
+// card scroll: About waits pinned at the bottom of the screen under the hero, which slides up off it like a card;
+// once the hero has cleared About the page scrolls on normally
 const IndexV2 = () => {
   return (
     <>
       <HeroV2 data={heroData} />
-      <div className="-mt-[calc(100svh-19px)]">
-        <div className="sticky top-0">
-          <AboutV2 data={aboutData} />
-          <Highlights data={highlightsData} />
-          <Services data={servicesData} />
-          <Excellence data={excellenceData} />
-          <Survey data={surveyData} />
-          <News data={newsData} />
-        </div>
-        <div aria-hidden="true" className="h-[calc(130svh-19px)]" />
-      </div>
+      <AboutV2 data={aboutData} />
+      <Highlights data={highlightsData} />
+      <Services data={servicesData} />
+      <Excellence data={excellenceData} />
+      <Survey data={surveyData} />
+      <News data={newsData} />
     </>
   );
 };
