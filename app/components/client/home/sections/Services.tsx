@@ -5,6 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { servicesData } from "../data";
 import SectionTitle from "@/app/components/common/SectionTitle";
+import { useParallax } from "@/app/components/common/useParallax";
 import { moveUp } from "@/app/components/common/motionVariants";
 import { motion } from "motion/react";
 
@@ -16,6 +17,10 @@ const Services = ({ data }: Props) => {
   const [active, setActive] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
+  const mediaRef = useRef<HTMLDivElement>(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
+  // the service images drift against the scroll inside their rounded frame, as in Survey
+  useParallax(mediaRef, parallaxRef);
 
   // starts full-bleed (edge to edge, no padding, square corners) and settles into the container
   // on entering the viewport; the card overflows into the section padding, so nothing below shifts
@@ -86,16 +91,18 @@ const Services = ({ data }: Props) => {
         <div ref={cardRef} className="relative flex flex-col overflow-hidden rounded-(--radius,10px) lg:aspect-[2.15] lg:flex-row">
           <Image src={data.background} alt="" fill className="object-cover" />
 
-          <div className="relative aspect-[4/3] lg:aspect-auto lg:w-[48.84%]">
-            {data.services.map((service, i) => (
-              <Image
-                key={service.title}
-                src={service.image}
-                alt={service.title}
-                fill
-                className={`object-cover pointer-events-none transition-opacity rounded-(--radius,10px) duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
-              />
-            ))}
+          <div ref={mediaRef} className="relative aspect-[4/3] overflow-hidden rounded-(--radius,10px) lg:aspect-auto lg:w-[48.84%]">
+            <div ref={parallaxRef} className="absolute inset-x-0 -top-[8%] h-[116%] will-change-transform">
+              {data.services.map((service, i) => (
+                <Image
+                  key={service.title}
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className={`object-cover pointer-events-none transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
+                />
+              ))}
+            </div>
           </div>
 
           <div className="relative flex flex-1 flex-col justify-between pl-70 py-70 3xl:py-100">

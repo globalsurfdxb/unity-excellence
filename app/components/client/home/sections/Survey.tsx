@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { surveyData } from "../data";
 import CommonButton from "@/app/components/common/CommonButton";
 import SectionTitle from "@/app/components/common/SectionTitle";
+import { useParallax } from "@/app/components/common/useParallax";
 import { moveUp } from "@/app/components/common/motionVariants";
 import { motion } from "motion/react";
 
@@ -17,42 +18,7 @@ const Survey = ({ data }: Props) => {
   const parallaxRef = useRef<HTMLDivElement>(null);
 
   // image drifts against the scroll inside its clipped frame
-  useEffect(() => {
-    const media = mediaRef.current;
-    const layer = parallaxRef.current;
-    if (!media || !layer || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let frame = 0;
-    const update = () => {
-      frame = 0;
-      const rect = media.getBoundingClientRect();
-      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-      const clamped = Math.min(Math.max(progress, 0), 1);
-      layer.style.transform = `translate3d(0, ${(clamped - 0.5) * 2 * 6}%, 0)`;
-    };
-    const onScroll = () => {
-      if (!frame) frame = requestAnimationFrame(update);
-    };
-
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        update();
-        window.addEventListener("scroll", onScroll, { passive: true });
-        window.addEventListener("resize", onScroll);
-      } else {
-        window.removeEventListener("scroll", onScroll);
-        window.removeEventListener("resize", onScroll);
-      }
-    });
-    observer.observe(media);
-
-    return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
+  useParallax(mediaRef, parallaxRef);
 
   return (
     <section className="grid lg:min-h-[calc(50vw*668/960)] lg:grid-cols-2">

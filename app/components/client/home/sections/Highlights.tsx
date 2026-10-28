@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -106,20 +107,23 @@ const Highlights = ({ data }: Props) => {
   return (
     <section ref={sectionRef} className="relative h-[88.5vh] overflow-hidden">
       {data.slides.map((slide, i) => (
-        <video
-          key={i}
-          ref={(el) => {
-            videos.current[i] = el;
-          }}
-          src={armed ? slide.video : undefined}
-          muted
-          playsInline
-          preload="metadata"
-          onEnded={() =>
-            i === total - 1 ? swiper?.slideTo(0) : swiper?.slideNext()
-          }
-          className={`absolute inset-0 size-full object-cover transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}
-        />
+        <div key={i} className={`absolute inset-0 transition-opacity duration-500 ${i === active ? "opacity-100" : "opacity-0"}`}>
+          {/* loaded with the page, unlike the video, so the section never shows empty; the video covers it once it has a frame */}
+          <Image src={slide.thumb} alt="" fill sizes="100vw" loading="eager" className="object-cover" />
+          <video
+            ref={(el) => {
+              videos.current[i] = el;
+            }}
+            src={armed ? slide.video : undefined}
+            muted
+            playsInline
+            preload="metadata"
+            onEnded={() =>
+              i === total - 1 ? swiper?.slideTo(0) : swiper?.slideNext()
+            }
+            className="absolute inset-0 size-full object-cover"
+          />
+        </div>
       ))}
       <div className="absolute inset-0 bg-black/50" />
 

@@ -29,6 +29,8 @@ export const highlightsData = {
   slides: [
     {
       video: "/assets/videos/home/highlights/1.mp4",
+      // shown until the video has its first frame
+      thumb: "/assets/videos/home/highlights/1-thumb.png",
       title: "Protecting every owner's\ninvestment",
       subtitle: "Well-maintained common areas and compliant governance",
       description:
@@ -36,6 +38,7 @@ export const highlightsData = {
     },
     {
       video: "/assets/videos/home/highlights/1.mp4",
+      thumb: "/assets/videos/home/highlights/1-thumb.png",
       title: "Keeping every resident\ninformed",
       subtitle: "Timely updates, open channels and responsive support",
       description:
@@ -43,6 +46,7 @@ export const highlightsData = {
     },
     {
       video: "/assets/videos/home/highlights/1.mp4",
+      thumb: "/assets/videos/home/highlights/1-thumb.png",
       title: "Managing service charges\nwith clarity",
       subtitle: "Accurate budgets and transparent financial reporting",
       description:
@@ -50,6 +54,7 @@ export const highlightsData = {
     },
     {
       video: "/assets/videos/home/highlights/1.mp4",
+      thumb: "/assets/videos/home/highlights/1-thumb.png",
       title: "Reliable care for every\ncommunity",
       subtitle: "Planned maintenance and carefully vetted service partners",
       description:
