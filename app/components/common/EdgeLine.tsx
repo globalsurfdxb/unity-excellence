@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { isFooterRevealing, onFooterReveal } from "./footerReveal";
 
 type Props = {
   height?: string;
@@ -25,9 +26,12 @@ const EdgeLine = ({ height = "h-[10px]", color = "border-primary/10", delay = 0,
 
     // in view isn't enough: the footer sits under the page and is only revealed as content scrolls off,
     // so wait until nothing else sits over the line's centre (checked against the parent, as the clipped line itself can't be hit)
+    // in the footer, skip the measuring until the content starts to uncover it
+    const inFooter = !!line.closest("footer");
     let frame = 0;
     const check = () => {
       frame = 0;
+      if (inFooter && !isFooterRevealing()) return;
       const rect = line.getBoundingClientRect();
       if (rect.top > window.innerHeight * 0.9) return;
       const hit = document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
@@ -38,7 +42,9 @@ const EdgeLine = ({ height = "h-[10px]", color = "border-primary/10", delay = 0,
     const onScroll = () => {
       if (!frame) frame = requestAnimationFrame(check);
     };
+    const offReveal = inFooter ? onFooterReveal(onScroll) : undefined;
     const stop = () => {
+      offReveal?.();
       observer.disconnect();
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(frame);
