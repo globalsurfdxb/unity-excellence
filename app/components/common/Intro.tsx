@@ -108,7 +108,8 @@ const Intro = () => {
           gsap.set(heroSection ?? [], { y: `${edge.top}vh` });
           gsap.set(root, { clipPath: `inset(0 0 ${100 - edge.top}% 0)` });
         };
-        tl.addLabel("wipe", ">+0.3")
+        // the last letters are still easing into place, too slowly to notice, when the panel sets off
+        tl.addLabel("wipe", ">-0.15")
           .set(root, { pointerEvents: "none" }, "wipe")
           .call(place, [], "wipe")
           .to(panel, { y: 0, duration: 1.45, ease: wipeEase }, "wipe")
@@ -118,7 +119,8 @@ const Intro = () => {
           .addLabel("reveal", `wipe+=${WIPE_LAG + 0.8}`)
           .call(() => setUnlocked(true), [], `wipe+=${WIPE_LAG + 1.45}`);
       } else {
-        tl.to('[data-intro="logo"]', { opacity: 0, duration: 0.5, ease: "power2.in" }, ">+0.1")
+        // as with the wipe, the logo starts fading while the last letters are still easing in
+        tl.to('[data-intro="logo"]', { opacity: 0, duration: 0.5, ease: "power2.in" }, ">-0.15")
           .addLabel("reveal")
           // let clicks and the hero title's on-screen check pass through while it fades
           .set(root, { pointerEvents: "none" }, "reveal")
