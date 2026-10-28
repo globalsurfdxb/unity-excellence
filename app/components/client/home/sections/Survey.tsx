@@ -29,7 +29,7 @@ const Survey = ({ data }: Props) => {
         <div className="absolute inset-0 bg-linear-[238.59deg] from-primary/0 from-[22.02%] to-primary/60 to-100%" />
       </div>
 
-      <div className="flex flex-col justify-center lg:-ml-[15px] bg-linear-[255.44deg] from-primary from-[56.21%] to-primary-light to-[154.81%] pl-20 py-100 text-white pr-30 lg:pl-120">
+      <div className="flex flex-col justify-center lg:-ml-[15px] bg-linear-[255.44deg] from-primary from-[56.21%] to-primary-light to-[154.81%] pl-20 py-100 text-white pr-30 lg:pl-120 3xl:pl-[135px]">
         <SectionTitle text={data.title} className="hero-title" />
         <motion.p
           initial="hidden"

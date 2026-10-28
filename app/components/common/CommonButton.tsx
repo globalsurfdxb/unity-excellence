@@ -14,7 +14,7 @@ type Props = {
 const CommonButton = ({ label, href, variant = "light", disabled = false, className = "" }: Props) => {
   const light = variant === "light";
   const pressScale = usePressScale(!disabled);
-  const classes = `group relative isolate overflow-hidden w-fit flex justify-center items-center rounded-full border border-border-color px-5 py-5 max-h-12.5 transition-opacity duration-300 ${disabled ? "cursor-not-allowed opacity-40" : "cursor-pointer"} ${className}`;
+  const classes = `group relative isolate overflow-hidden w-fit flex justify-center items-center rounded-full border border-border-color h-(--btn-size) px-(--btn-px) transition-opacity duration-300 ${disabled ? "cursor-not-allowed opacity-40" : "cursor-pointer"} ${className}`;
   const text = (
     <span className={`relative text-description-2 text-trim transition-colors duration-200 ease-linear ${light ? "text-white" : "text-primary"} ${disabled ? "" : light ? "group-hover:text-primary" : "group-hover:text-white"}`}>
       {label}

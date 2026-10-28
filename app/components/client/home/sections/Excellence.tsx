@@ -12,6 +12,10 @@ type Props = {
 };
 
 const Excellence = ({ data }: Props) => {
+  const count = data.features.length;
+  // index where the bottom row starts: just the last item in one column, the last one or two from sm's two columns
+  const lastRowSm = count - (count % 2 || 2);
+
   return (
     <section className="bg-cream-background py-130">
       <div className="container flex flex-col lg:flex-row gap-80 lg:justify-between">
@@ -31,7 +35,8 @@ const Excellence = ({ data }: Props) => {
           {data.features.map((feature, i) => (
             <li key={feature.title} className="min-[1900px]:min-w-[408px]">
               <EdgeLine delay={i * 0.12} />
-              <div className="flex items-center gap-30 pt-30 pb-60 pr-50">
+              {/* the bottom row needs no space under it, the section padding takes over */}
+              <div className={`flex items-center gap-30 pt-30 pr-50 ${i === count - 1 ? "" : i >= lastRowSm ? "pb-60 sm:pb-0" : "pb-60"}`}>
                 {/* icon and title close in on each other: icon from the left, title from the right */}
                 <motion.div initial="hidden" whileInView="show" variants={moveRight(i * 0.12, 20)} className="flex-shrink-0">
                   <Image

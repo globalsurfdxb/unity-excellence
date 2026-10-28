@@ -70,7 +70,7 @@ const News = ({ data }: Props) => {
             spaceBetween={20}
             breakpoints={{
               640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3, spaceBetween: 30 },
+              1024: { slidesPerView: 3, spaceBetween: 24 },
               1280: { slidesPerView: 4, spaceBetween: 30 },
               1780: { slidesPerView: 4, spaceBetween: 32 },
             }}

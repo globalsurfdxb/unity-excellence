@@ -38,7 +38,7 @@ const Header = ({ data }: Props) => {
           aria-label="Open menu"
           data-intro="header-end"
           {...pressScale}
-          className="group relative isolate order-last flex size-[50px] cursor-pointer items-center justify-center justify-self-start overflow-hidden rounded-full border border-border-color md:order-none"
+          className="group relative isolate order-last flex size-(--btn-size) cursor-pointer items-center justify-center justify-self-start overflow-hidden rounded-full border border-border-color md:order-none"
         >
           {/* on hover one fill drops from the top and one rises from the bottom, meeting in the middle,
               in the colour opposite the bar behind it */}
@@ -61,8 +61,8 @@ const Header = ({ data }: Props) => {
         </button>
 
         <Link href="/" aria-label="Unity Excellence home" data-intro="header-logo" className="justify-self-center">
-          <Image src={data.logo} alt="Unity Excellence" width={128} height={114} preload
-            className={`h-auto pointer-events-none transition-[width,filter] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${solid ? "w-[70px] lg:w-[100px]" : "w-[90px] brightness-0 invert lg:w-[128px]"}`}
+          <Image src={data.logo} alt="Unity Excellence" width={129} height={114} preload
+            className={`h-auto pointer-events-none transition-[width,filter] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${solid ? "w-[70px] lg:w-[80px] 2xl:w-[90px] 3xl:w-[100px]" : "w-[80px] brightness-0 invert lg:w-[100px] 2xl:w-[110px] 2xl:h-[104px] 3xl:w-[128.44px] 3xl:h-[114px]"}`}
           />
         </Link>
 

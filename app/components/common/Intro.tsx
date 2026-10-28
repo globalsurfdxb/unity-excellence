@@ -38,6 +38,13 @@ const Intro = () => {
     else lenis.start();
   }, [lenis, locked]);
 
+  // entrances that wait for nothing to cover them (footer content, section titles, edge lines) re-check on scroll,
+  // and the overlay covered everything until it finished wiping off; after a reload that lands mid-page there is no scroll to prompt them.
+  // fired on unlock, not once the whole intro is done: the hero's entrance is still finishing then, but the screen is already clear
+  useEffect(() => {
+    if (!locked) window.dispatchEvent(new Event("scroll"));
+  }, [locked]);
+
   useLayoutEffect(() => {
     const root = rootRef.current;
     if (!root) return;
