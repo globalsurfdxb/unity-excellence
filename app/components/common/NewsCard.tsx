@@ -19,10 +19,15 @@ const NewsCard = ({ image, title, category, date, href }: Props) => {
       </div>
 
       <div className="relative isolate flex min-h-[240px] flex-1 flex-col justify-between gap-40 overflow-hidden rounded-t-[10px] bg-cream-background p-30 3xl:min-h-[300px]">
-        {/* navy fill drops from the top with a curved edge that flattens as it lands */}
+        {/* navy fills drop from the top and rise from the bottom at once; each covers a little past the middle,
+            so their curved edges meet and overlap, flattening as they land */}
         <span
           aria-hidden
-          className="absolute -inset-x-[15%] top-0 -z-10 h-[130%] -translate-y-full rounded-[0_0_50%_50%/0_0_35%_35%] bg-primary transition-[translate,border-radius] duration-[400ms] ease-linear group-hover:translate-y-0 group-hover:rounded-none"
+          className="absolute -inset-x-[15%] top-0 -z-10 h-[65%] -translate-y-full rounded-[0_0_50%_50%/0_0_60%_60%] bg-primary transition-[translate,border-radius] duration-300 ease-linear group-hover:translate-y-0 group-hover:rounded-none"
+        />
+        <span
+          aria-hidden
+          className="absolute -inset-x-[15%] bottom-0 -z-10 h-[65%] translate-y-full rounded-[50%_50%_0_0/60%_60%_0_0] bg-primary transition-[translate,border-radius] duration-300 ease-linear group-hover:translate-y-0 group-hover:rounded-none"
         />
         <h3 data-news="content" className="text-subtitle transition-colors duration-300 group-hover:text-white group-hover:delay-75">{title}</h3>
         <div data-news="content" className="flex items-center justify-between gap-20 text-description-3">
