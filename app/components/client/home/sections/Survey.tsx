@@ -13,16 +13,12 @@ type Props = {
 
 const Survey = ({ data }: Props) => {
   return (
-    <section className="grid lg:min-h-[calc(50vw*668/960)] lg:grid-cols-2">
-      {/* the image rolls out from the left edge to the right the first time the frame comes into view;
-          the frame is what's watched, as an element clipped to nothing never counts as in view;
-          it carries the text panel's gradient mirrored (104.56deg = 360 - 255.44), so the image rolls out over navy rather than
-          blank white and the two light sides meet in the middle */}
+    <section className="grid md:min-h-[calc(50vw*668/960)] md:grid-cols-2">
       <motion.div
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
-        className="relative isolate z-10 aspect-[960/668] overflow-hidden bg-linear-[104.56deg] from-primary from-[56.21%] to-primary-light to-[154.81%] lg:aspect-auto lg:rounded-r-[10px]"
+        className="relative isolate z-10 aspect-[960/668] overflow-hidden bg-linear-[104.56deg] from-primary from-[56.21%] to-primary-light to-[154.81%] md:aspect-auto md:rounded-r-[10px]"
       >
         <motion.div
           variants={{ hidden: { clipPath: "inset(0% 100% 0% 0%)" }, show: { clipPath: "inset(0% 0% 0% 0%)" } }}
@@ -34,7 +30,7 @@ const Survey = ({ data }: Props) => {
         </motion.div>
       </motion.div>
 
-      <div className="flex flex-col justify-center lg:-ml-[15px] bg-linear-[255.44deg] from-primary from-[56.21%] to-primary-light to-[154.81%] pl-20 py-100 text-white pr-30 lg:pl-120 3xl:pl-[135px]">
+      <div className="flex flex-col justify-center md:-ml-[15px] bg-linear-[255.44deg] from-primary from-[56.21%] to-primary-light to-[154.81%] pl-20 py-100 text-white pr-30 md:pl-100 lg:pl-120 3xl:pl-[135px]">
         <SectionTitle text={data.title} className="hero-title" />
         <motion.p
           initial="hidden"
