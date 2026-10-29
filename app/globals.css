@@ -13,7 +13,7 @@
 /* Regular Font */
 @font-face {
   font-family: "Neue Montreal Regular";
-  src: url("/assets/fonts/neuemontreal-regular.otf") format("opentype");
+  src: url("/assets/fonts/neuemontreal-regular.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -21,7 +21,7 @@
 /* Medium Font */
 @font-face {
   font-family: "Neue Montreal Medium";
-  src: url("/assets/fonts/neuemontreal-medium.otf") format("opentype");
+  src: url("/assets/fonts/neuemontreal-medium.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -29,7 +29,7 @@
 /* Bold Font */
 @font-face {
   font-family: "Neue Montreal Bold";
-  src: url("/assets/fonts/neuemontreal-bold.otf") format("opentype");
+  src: url("/assets/fonts/neuemontreal-bold.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
