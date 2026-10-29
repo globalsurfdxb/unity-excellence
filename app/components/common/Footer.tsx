@@ -31,7 +31,7 @@ const Footer = ({ data }: Props) => {
 
   return (
     <footer
-      className={`relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 pt-130 pb-60 min-[1900px]:pb-[64px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${atEnd ? "rounded-t-[40px]" : "rounded-t-none"}`}
+      className={`relative overflow-hidden xl:sticky xl:bottom-0 xl:z-0 section-top-spacing pb-60 min-[1900px]:pb-[64px] transition-[border-radius] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${atEnd ? "rounded-t-[40px]" : "rounded-t-none"}`}
     >
       <Image src={data.background} alt="" fill className="object-cover pointer-events-none" />
       <div className="container pointer-events-none absolute inset-x-0 top-0">
@@ -95,7 +95,9 @@ const Footer = ({ data }: Props) => {
           {/* row 3 */}
           {/* shares the links' row, so it rises in on the same uncover */}
           <motion.div initial="hidden" animate={navShown ? "show" : "hidden"} variants={moveUpV4()}>
-            <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[110px] 3xl:w-[116px]" />
+            <Link href="/" aria-label="Unity Excellence home" className="inline-block">
+              <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[110px] 3xl:w-[116px]" />
+            </Link>
           </motion.div>
 
           {/* links start slightly bunched and spread out to their spacing once uncovered, easing just past it before settling */}

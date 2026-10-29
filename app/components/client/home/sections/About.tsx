@@ -91,7 +91,7 @@ const About = ({ data }: Props) => {
   return (
     // pinned to the bottom of the screen while the hero scrolls up over it, then scrolls on with the page once fully uncovered;
     // only on screens tall enough to show the whole section, so none of it is cut off while pinned
-    <motion.section style={{ clipPath }} className="py-130 [@media(min-height:700px)]:sticky [@media(min-height:700px)]:bottom-0">
+    <motion.section style={{ clipPath }} className="section-spacing [@media(min-height:700px)]:sticky [@media(min-height:700px)]:bottom-0">
       <div className="container relative">
         <div className="relative">
           <div className="flex justify-between px-80">

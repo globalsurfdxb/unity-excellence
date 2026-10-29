@@ -134,7 +134,7 @@ const Services = ({ data }: Props) => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="overflow-x-clip py-130">
+    <section ref={sectionRef} className="overflow-x-clip section-spacing">
       <div className="container">
         <div ref={cardRef} className="relative flex flex-col overflow-hidden rounded-(--radius,10px) lg:aspect-[2] lg:flex-row 2xl:aspect-[2.15] 3xl:h-[801px]">
           <Image src={data.background} alt="" fill className="object-cover" />

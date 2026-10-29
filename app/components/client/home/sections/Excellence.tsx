@@ -17,7 +17,7 @@ const Excellence = ({ data }: Props) => {
   const lastRowSm = count - (count % 2 || 2);
 
   return (
-    <section className="bg-cream-background py-130">
+    <section className="bg-cream-background section-spacing">
       <div className="container flex flex-col lg:flex-row gap-80 lg:justify-between">
         <div>
           <SectionTitle text={data.title} className="section-title" />
