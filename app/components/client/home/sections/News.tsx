@@ -101,7 +101,7 @@ const News = ({ data }: Props) => {
   }, []);
 
   return (
-    <section className="py-130">
+    <section className="section-spacing">
       <div className="container">
         <div className="flex items-center justify-between gap-20">
           <SectionTitle text={data.title} className="section-title" />

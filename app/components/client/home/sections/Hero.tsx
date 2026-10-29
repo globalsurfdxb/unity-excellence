@@ -30,7 +30,7 @@ const Hero = ({ data }: Props) => {
         className="absolute -bottom-[3px] right-150 h-auto max-w-[33%] 3xl:max-w-[50%]"
       />
 
-      <div className="container relative flex h-full flex-col justify-end pb-130">
+      <div className="container relative flex h-full flex-col justify-end section-bottom-spacing">
         <HeroTitle text={data.title} className="hero-title text-white mb-30" />
         <div data-intro="hero-button" className="w-fit">
           <CommonButton label={data.button.label} href={data.button.href} />

@@ -50,14 +50,14 @@
 }
 
 .show-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #BFBFBF;
+  background-color: #F3F3F3;
   border-radius: 0 5px 5px 0;
 }
 
 /* Firefox uses a different property entirely, not ::-webkit-scrollbar */
 .show-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #BFBFBF transparent;
+  scrollbar-color: #F3F3F3 transparent;
 }
 
 html {
@@ -316,6 +316,19 @@ body {
   @apply text-16 leading-[1.1875];
 }
 
+/* shared section padding — change the spacing here to update every section */
+@utility section-spacing {
+  @apply py-130;
+}
+
+@utility section-top-spacing {
+  @apply pt-130;
+}
+
+@utility section-bottom-spacing {
+  @apply pb-130;
+}
+
 /* for enabling vertical trim */
 .text-trim {
   text-box-trim: trim-both;
@@ -324,7 +337,6 @@ body {
 
 
 /* ---------- Gradient Animation - Home - About Section ---------- */
-/* registered so the gradient angle can animate */
 @property --gradient-angle {
   syntax: "<angle>";
   inherits: false;
