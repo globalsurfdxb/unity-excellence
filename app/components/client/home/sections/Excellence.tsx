@@ -24,6 +24,7 @@ const Excellence = ({ data }: Props) => {
           <motion.p
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             variants={moveUp(0.07)}
             className="text-description mt-20 max-w-[47ch] text-secondary"
           >
@@ -36,18 +37,18 @@ const Excellence = ({ data }: Props) => {
             <li key={feature.title} className="min-[1900px]:min-w-[408px]">
               <EdgeLine delay={i * 0.12} />
               {/* the bottom row needs no space under it, the section padding takes over */}
-              <div className={`flex items-center gap-30 pt-30 pr-50 ${i === count - 1 ? "" : i >= lastRowSm ? "pb-60 sm:pb-0" : "pb-60"}`}>
+              <div className={`flex items-center gap-20 pt-30 sm:pr-30 md:gap-30 lg:pr-50 ${i === count - 1 ? "" : i >= lastRowSm ? "pb-30 sm:pb-0" : "pb-30 md:pb-60"}`}>
                 {/* icon and title close in on each other: icon from the left, title from the right */}
-                <motion.div initial="hidden" whileInView="show" variants={moveRight(i * 0.12, 20)} className="flex-shrink-0">
+                <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={moveRight(i * 0.12, 20)} className="flex-shrink-0">
                   <Image
                     src={feature.icon}
                     alt=""
                     width={50}
                     height={50}
-                    className="h-[50px] w-auto pointer-events-none"
+                    className="h-[36px] w-auto pointer-events-none md:h-[42px] lg:h-[50px]"
                   />
                 </motion.div>
-                <motion.span initial="hidden" whileInView="show" variants={moveLeft(i * 0.12, 20)} className="text-subtitle">
+                <motion.span initial="hidden" whileInView="show" viewport={{ once: true }} variants={moveLeft(i * 0.12, 20)} className="text-subtitle">
                   {feature.title}
                 </motion.span>
               </div>
