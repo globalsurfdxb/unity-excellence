@@ -35,6 +35,7 @@ const Survey = ({ data }: Props) => {
         <motion.p
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true }}
           variants={moveUp(0.07)}
           className="text-description mt-20 max-w-[40ch] text-white/70"
         >
@@ -43,6 +44,7 @@ const Survey = ({ data }: Props) => {
         <motion.div
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true }}
           variants={moveUp(0.15)}
           className="mt-40"
           >

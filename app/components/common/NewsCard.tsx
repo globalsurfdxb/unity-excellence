@@ -18,7 +18,7 @@ const NewsCard = ({ image, title, category, date, href }: Props) => {
         </div>
       </div>
 
-      <div className="relative isolate flex min-h-[240px] flex-1 flex-col justify-between gap-40 overflow-hidden rounded-t-[10px] bg-cream-background p-30 3xl:min-h-[300px]">
+      <div className="relative isolate flex min-h-[160px] flex-1 md:min-h-[200px] lg:min-h-[240px] flex-col justify-between gap-40 overflow-hidden rounded-t-[10px] bg-cream-background p-30 3xl:min-h-[300px]">
         {/* navy fills drop from the top and rise from the bottom at once; each covers a little past the middle,
             so their curved edges meet and overlap, flattening as they land */}
         <span
@@ -31,7 +31,8 @@ const NewsCard = ({ image, title, category, date, href }: Props) => {
         />
         <h3 data-news="content" className="text-subtitle transition-colors duration-300 group-hover:text-white group-hover:delay-75">{title}</h3>
         <div data-news="content" className="flex items-center justify-between gap-20 text-description-3">
-          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] text-secondary transition-colors duration-300 group-hover:border-white/40 group-hover:text-white group-hover:delay-200">
+          {/* below lg the pill matches the buttons: same height, side padding and text size */}
+          <span className="rounded-full border border-border-color px-[10px] py-[10px] max-h-[41px] max-lg:flex max-lg:h-(--btn-size) max-lg:items-center max-lg:px-(--btn-px) max-lg:py-0 max-lg:text-description-2 text-secondary transition-colors duration-300 group-hover:border-white/40 group-hover:text-white group-hover:delay-200">
             {category}
           </span>
           <span className="text-secondary transition-colors duration-300 group-hover:text-white group-hover:delay-200">{date}</span>

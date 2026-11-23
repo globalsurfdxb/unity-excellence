@@ -139,7 +139,7 @@ const Services = ({ data }: Props) => {
         <div ref={cardRef} className="relative flex flex-col overflow-hidden rounded-(--radius,10px) lg:aspect-[2] lg:flex-row 2xl:aspect-[2.15] 3xl:h-[801px]">
           <Image src={data.background} alt="" fill className="object-cover" />
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-(--radius,10px) lg:aspect-auto lg:w-[48.84%]">
+          <div className="relative max-lg:order-2 max-lg:max-h-[400px] aspect-[4/3] overflow-hidden rounded-(--radius,10px) lg:aspect-auto lg:w-[48.84%]">
             <div className="absolute inset-0">
               {data.services.map((service, i) => (
                 <Image
@@ -156,19 +156,20 @@ const Services = ({ data }: Props) => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 flex-col justify-between pl-70 py-50 xl:py-70 3xl:py-100">
+          <div className="relative flex flex-1 flex-col justify-between gap-40 px-30 py-50 md:px-50 lg:gap-0 lg:pr-0 lg:pl-70 xl:py-70 3xl:py-100">
             <Image
               src={data.bgShape}
               alt=""
               width={311}
               height={553}
-              className="pointer-events-none absolute right-0 top-1/2 h-[63%] 3xl:h-[69%] w-auto -translate-y-1/2"
+              className="pointer-events-none absolute right-0 top-1/2 h-[35%] lg:h-[63%] 3xl:h-[69%] w-auto -translate-y-1/2"
             />
             <div className="relative">
               <SectionTitle text={data.title} className="section-title text-white" />
               <motion.p
                 initial="hidden"
                 whileInView="show"
+                viewport={{ once: true }}
                 variants={moveUp(0.07)}
                 className="text-description mt-20 max-w-[35ch] text-white/70"
               >

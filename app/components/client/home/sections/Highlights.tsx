@@ -105,7 +105,7 @@ const Highlights = ({ data }: Props) => {
   }, [active, inView]);
 
   return (
-    <section ref={sectionRef} className="relative h-[88.5vh] min-[1900px]:h-[878px] overflow-hidden">
+    <section ref={sectionRef} className="relative h-[65svh] lg:h-[88.5svh] min-[1900px]:h-[878px] overflow-hidden">
       {data.slides.map((slide, i) => (
         <div key={i} className={`absolute inset-0 transition-opacity duration-600 ${i === active ? "opacity-100" : "opacity-0"}`}>
           {/* loaded with the page, unlike the video, so the section never shows empty; the video covers it once it has a frame */}
@@ -169,8 +169,9 @@ const Highlights = ({ data }: Props) => {
                   <motion.span
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true }}
                     variants={moveUp(0.1)}
-                    className="inline-block rounded-full bg-primary px-[17.5px] py-3 3xl:min-w-[86px] text-[20px] text-white max-h-[38px] text-trim"
+                    className="inline-block rounded-full bg-primary px-3 py-2 text-[13px] md:px-[17.5px] md:py-3 md:text-[20px] 3xl:min-w-[86px] text-white max-h-[38px] text-trim"
                   >
                     {pad(i + 1)}/
                     <span className="text-white/40">{pad(total)}</span>
@@ -178,6 +179,7 @@ const Highlights = ({ data }: Props) => {
                   <motion.h3
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true }}
                     variants={moveUp(0.2)}
                     className="text-subtitle mt-20 max-w-[22ch] text-white"
                   >
@@ -186,6 +188,7 @@ const Highlights = ({ data }: Props) => {
                   <motion.p
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true }}
                     variants={moveUp(0.3)}
                     className="text-description mt-20 max-w-[35ch] text-white/70"
                   >

@@ -60,33 +60,41 @@ const Footer = ({ data }: Props) => {
               <CommonButton label={data.button.label} href={data.button.href} />
             </motion.div>
           </div>
-          <div className="lg:col-span-2 lg:self-start mt-3">
-            <motion.a
-              href={`tel:${data.contact.phone.replace(/\s/g, "")}`}
-              initial="hidden"
-              animate={introShown ? "show" : "hidden"}
-              variants={moveUpV4(0.25)}
-              className="text-subtitle block text-white w-fit"
-            >
-              {data.contact.phone}
-            </motion.a>
-            <motion.a
-              href={`mailto:${data.contact.email}`}
-              initial="hidden"
-              animate={introShown ? "show" : "hidden"}
-              variants={moveUpV4(0.35)}
-              className="text-subtitle mt-[10px] block underline text-white w-fit"
-            >
-              {data.contact.email}
-            </motion.a>
-            <motion.p
-              initial="hidden"
-              animate={introShown ? "show" : "hidden"}
-              variants={moveUpV4(0.45)}
-              className="text-description mt-20 whitespace-pre-line text-white/70 w-fit"
-            >
-              {data.contact.address}
-            </motion.p>
+          {/* below lg the logo sits on the right of the contact details (the row-3 logo is hidden there) */}
+          <div className="lg:col-span-2 lg:self-start mt-3 max-lg:flex max-lg:items-start max-lg:justify-between max-lg:gap-20">
+            <div>
+              <motion.a
+                href={`tel:${data.contact.phone.replace(/\s/g, "")}`}
+                initial="hidden"
+                animate={introShown ? "show" : "hidden"}
+                variants={moveUpV4(0.25)}
+                className="text-subtitle block text-white w-fit"
+              >
+                {data.contact.phone}
+              </motion.a>
+              <motion.a
+                href={`mailto:${data.contact.email}`}
+                initial="hidden"
+                animate={introShown ? "show" : "hidden"}
+                variants={moveUpV4(0.35)}
+                className="text-subtitle mt-[10px] block underline text-white w-fit"
+              >
+                {data.contact.email}
+              </motion.a>
+              <motion.p
+                initial="hidden"
+                animate={introShown ? "show" : "hidden"}
+                variants={moveUpV4(0.45)}
+                className="text-description mt-20 whitespace-pre-line text-white/70 w-fit"
+              >
+                {data.contact.address}
+              </motion.p>
+            </div>
+            <motion.div initial="hidden" animate={introShown ? "show" : "hidden"} variants={moveUpV4(0.35)} className="shrink-0 lg:hidden">
+              <Link href="/" aria-label="Unity Excellence home" className="inline-block">
+                <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[90px] md:w-[110px]" />
+              </Link>
+            </motion.div>
           </div>
 
           {/* row 2 */}
@@ -94,7 +102,7 @@ const Footer = ({ data }: Props) => {
 
           {/* row 3 */}
           {/* shares the links' row, so it rises in on the same uncover */}
-          <motion.div initial="hidden" animate={navShown ? "show" : "hidden"} variants={moveUpV4()}>
+          <motion.div initial="hidden" animate={navShown ? "show" : "hidden"} variants={moveUpV4()} className="max-lg:hidden">
             <Link href="/" aria-label="Unity Excellence home" className="inline-block">
               <Image src={data.logo} alt="Unity Excellence" width={116} height={103} className="pointer-events-none h-auto w-[110px] 3xl:w-[116px]" />
             </Link>
@@ -109,7 +117,7 @@ const Footer = ({ data }: Props) => {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-subtitle transition-colors duration-400 hover:text-white ${pathname === link.href ? "text-white" : "text-white/50"}`}
+                className={`text-subtitle max-md:text-[15px] whitespace-nowrap transition-colors duration-400 hover:text-white ${pathname === link.href ? "text-white" : "text-white/50"}`}
               >
                 {link.label}
               </Link>
@@ -128,7 +136,7 @@ const Footer = ({ data }: Props) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 {...pressScale}
-                className="group relative isolate flex size-[48px] items-center justify-center overflow-hidden rounded-full border border-border-color/20"
+                className="group relative isolate flex size-[48px] max-lg:size-(--btn-size) items-center justify-center overflow-hidden rounded-full border border-border-color/20"
               >
                 {/* on hover one fill drops from the top and one rises from the bottom, meeting in the middle */}
                 <span
@@ -145,7 +153,7 @@ const Footer = ({ data }: Props) => {
                   alt=""
                   width={24}
                   height={24}
-                  className="pointer-events-none brightness-0 invert transition-[filter] duration-200 ease-linear group-hover:brightness-100 group-hover:invert-0"
+                  className="pointer-events-none max-lg:size-[18px] brightness-0 invert transition-[filter] duration-200 ease-linear group-hover:brightness-100 group-hover:invert-0"
                 />
               </a>
             ))}
