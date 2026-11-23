@@ -27,10 +27,10 @@ const Hero = ({ data }: Props) => {
         data-intro="hero-shape"
         width={536}
         height={260}
-        className="absolute -bottom-[3px] right-150 h-auto max-w-[33%] 3xl:max-w-[50%]"
+        className="absolute -bottom-[3px] right-150 h-auto max-w-[55%] sm:max-w-[45%] lg:max-w-[33%] 3xl:max-w-[50%]"
       />
 
-      <div className="container relative flex h-full flex-col justify-end section-bottom-spacing">
+      <div className="container relative flex h-full flex-col justify-end pb-[150px] lg:section-bottom-spacing">
         <HeroTitle text={data.title} className="hero-title text-white mb-30" />
         <div data-intro="hero-button" className="w-fit">
           <CommonButton label={data.button.label} href={data.button.href} />
