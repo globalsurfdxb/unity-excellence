@@ -101,7 +101,7 @@ const News = ({ data }: Props) => {
   }, []);
 
   return (
-    <section className="section-spacing">
+    <section className="section-spacing overflow-hidden">
       <div className="container">
         <div className="flex items-center justify-between gap-20">
           <SectionTitle text={data.title} className="section-title" />
@@ -113,18 +113,17 @@ const News = ({ data }: Props) => {
         </div>
 
         <div ref={listRef} className="mt-50">
-          {/* a grab cursor only where the cards overflow and can be dragged; where they all fit, the cards keep their link pointer.
-              The cards are links, so the cursor is set on them too */}
           <Swiper
             grabCursor
             onSwiper={(swiper) => setDraggable(!swiper.isLocked)}
             onLock={() => setDraggable(false)}
             onUnlock={() => setDraggable(true)}
-            className={draggable ? "[&_a]:cursor-grab [&_a:active]:cursor-grabbing" : ""}
+            className={`{ ${draggable ? "[&_a]:cursor-grab [&_a:active]:cursor-grabbing" : "" } max-sm:!overflow-visible`}
             slidesPerView={1.2}
             speed={800}
             spaceBetween={20}
             breakpoints={{
+              590: { slidesPerView: 1.6 },
               640: { slidesPerView: 2 },
               950: { slidesPerView: 3, spaceBetween: 15 },
               1024: { slidesPerView: 3, spaceBetween: 24 },
