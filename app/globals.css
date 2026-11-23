@@ -169,6 +169,41 @@ input:-webkit-autofill:active {
 }
 }
 
+/* mobile + tablet (below lg / 1024px) — mobile minimums aligned with the Gulf Cryo scale.
+   Each token ramps from its mobile value at 420px up to the exact value the desktop
+   formula above produces at 1024px, so there is no jump at the breakpoint and
+   laptop / desktop sizes (≥1024px) are untouched. Below 420px the minimum holds. */
+@media (max-width: 1023.98px) {
+  :root {
+    /* hero title: 32px at 420px → 42.67px at 1024px */
+    --text-80: clamp(32px, 32px + (100vw - 420px) * 10.67 / 604, 42.67px);
+
+    /* section title: 28px at 420px → 31.33px at 1024px */
+    --text-50: clamp(28px, 28px + (100vw - 420px) * 3.33 / 604, 31.33px);
+
+    /* description: 14px at 420px → 16.05px at 1024px */
+    --text-18: clamp(14px, 14px + (100vw - 420px) * 2.05 / 604, 16.05px);
+
+    /* small text: 12px at 420px → 13.4px at 1024px */
+    --text-14: clamp(12px, 12px + (100vw - 420px) * 1.4 / 604, 13.4px);
+
+    /* 50px at 420px → 108.19px at 1024px */
+    --space-150: clamp(50px, 50px + (100vw - 420px) * 58.19 / 604, 108.19px);
+
+    /* section spacing: 50px at 420px → 94.16px at 1024px */
+    --space-130: clamp(50px, 50px + (100vw - 420px) * 44.16 / 604, 94.16px);
+
+    /* 45px at 420px → 87.15px at 1024px */
+    --space-120: clamp(45px, 45px + (100vw - 420px) * 42.15 / 604, 87.15px);
+
+    /* 42px at 420px → 76.11px at 1024px (kept below space-120 so the scale stays in order) */
+    --space-100: clamp(42px, 42px + (100vw - 420px) * 34.11 / 604, 76.11px);
+
+    /* 36px at 420px → 48.05px at 1024px */
+    --space-60: clamp(36px, 36px + (100vw - 420px) * 12.05 / 604, 48.05px);
+  }
+}
+
 
 @theme inline {
   --color-primary: var(--primary);
