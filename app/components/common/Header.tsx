@@ -24,12 +24,13 @@ const Header = ({ data }: Props) => {
     if (direction === -1) setHidden(false);
   });
 
-  // white bar only while the header is showing mid-page, not while it slides away
+  // white bar only while the header is showing mid-page, not while it slides away;
+  // the compact size follows `scrolled` alone, so the header doesn't grow (and shift its buttons) as it hides
   const solid = scrolled && !hidden;
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[translate,background-color,padding,box-shadow] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${hidden ? "-translate-y-full" : "translate-y-0"} ${solid ? "bg-white py-20 shadow-[0_4px_20px_rgba(21,38,99,0.06)]" : "pt-50"}`}
+      className={`fixed inset-x-0 top-0 z-50 transition-[translate,background-color,padding,box-shadow] duration-800 ease-[cubic-bezier(0.65,0,0.35,1)] ${hidden ? "-translate-y-[calc(100%+20px)]" : "translate-y-0"} ${scrolled ? "py-20" : "pt-[15px] md:pt-50"} ${solid ? "bg-white shadow-[0_4px_20px_rgba(21,38,99,0.06)]" : ""}`}
     >
       {/* below md: logo left, hamburger right, no button */}
       <div className="container flex items-center justify-between md:grid md:grid-cols-3">
@@ -56,13 +57,14 @@ const Header = ({ data }: Props) => {
             alt=""
             width={20}
             height={15}
-            className={`pointer-events-none transition-[filter] duration-200 ease-linear ${solid ? "group-hover:brightness-0 group-hover:invert" : "brightness-0 invert group-hover:brightness-100 group-hover:invert-0"}`}
+            className={`pointer-events-none h-auto w-4 lg:w-5 transition-[filter] duration-200 ease-linear ${solid ? "group-hover:brightness-0 group-hover:invert" : "brightness-0 invert group-hover:brightness-100 group-hover:invert-0"}`}
           />
         </button>
 
         <Link href="/" aria-label="Unity Excellence home" data-intro="header-logo" className="justify-self-center">
+          {/* height stays auto in both states so it animates with the width instead of snapping */}
           <Image src={data.logo} alt="Unity Excellence" width={129} height={114} preload
-            className={`h-auto pointer-events-none transition-[width,filter] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${solid ? "w-[70px] lg:w-[80px] 2xl:w-[90px] 3xl:w-[100px]" : "w-[80px] brightness-0 invert lg:w-[100px] 2xl:w-[110px] 2xl:h-[104px] 3xl:w-[128.44px] 3xl:h-[114px]"}`}
+            className={`h-auto pointer-events-none transition-[width,filter] duration-800 ease-[cubic-bezier(0.65,0,0.35,1)] ${scrolled ? "w-[70px] lg:w-[80px] 2xl:w-[90px] 3xl:w-[100px]" : "w-[80px] lg:w-[100px] 2xl:w-[110px] 3xl:w-[128.44px]"} ${solid ? "" : "brightness-0 invert"}`}
           />
         </Link>
 
