@@ -105,7 +105,7 @@ const Highlights = ({ data }: Props) => {
   }, [active, inView]);
 
   return (
-    <section ref={sectionRef} className="relative h-[65svh] lg:h-[88.5svh] min-[1900px]:h-[878px] overflow-hidden">
+    <section ref={sectionRef} className="relative h-[70svh] lg:h-[88.5svh] min-[1900px]:h-[878px] overflow-hidden">
       {data.slides.map((slide, i) => (
         <div key={i} className={`absolute inset-0 transition-opacity duration-600 ${i === active ? "opacity-100" : "opacity-0"}`}>
           {/* loaded with the page, unlike the video, so the section never shows empty; the video covers it once it has a frame */}
